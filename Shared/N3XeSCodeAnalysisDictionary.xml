@@ -1,0 +1,70 @@
+﻿<Dictionary>
+	<Words>
+		<Compound>
+			<Term CompoundAlternate="ArgumentValidation">Argumentvalidation</Term>
+			<Term CompoundAlternate="eTag">eTag</Term>
+			<Term CompoundAlternate="ETag">eTag</Term>
+			<Term CompoundAlternate="FocalIn">FocalIn</Term>
+			<Term CompoundAlternate="InLine">InLine</Term>
+			<Term CompoundAlternate="PlaceMark">Placemark</Term>
+			<Term CompoundAlternate="RadioPhone">Radiophone</Term>
+			<Term CompoundAlternate="TestIs">TestIs</Term>
+			<Term CompoundAlternate="VoiceOver">Voiceover</Term>
+			<Term CompoundAlternate="WebMail">Webmail</Term>
+			<Term CompoundAlternate="WebSite">Website</Term>
+		</Compound>
+		<Deprecated>
+		</Deprecated>
+		<DiscreteExceptions>
+		</DiscreteExceptions>
+		<Recognized>
+			<Word>Analyzation</Word>
+			<Word>Applicate</Word>
+			<Word>Behaviour</Word>
+			<Word>Commentable</Word>
+			<Word>Commitable</Word>
+			<Word>Completable</Word>
+			<Word>Enableable</Word>
+			<Word>Encapsulator</Word>
+			<Word>Encapsulators</Word>
+			<Word>Focal</Word>
+			<Word>Geocoder</Word>
+			<Word>Geocoders</Word>
+			<Word>Globals</Word>
+			<Word>Hyperfocal</Word>
+			<Word>Ident</Word>
+			<Word>Initializable</Word>
+			<Word>N3XeS</Word>
+			<Word>NeXeS</Word>
+			<Word>Lexer</Word>
+			<Word>Lexers</Word>
+			<Word>Mappable</Word>
+			<Word>Nonce</Word>
+			<Word>Nonces</Word>
+			<Word>Phonex</Word>
+			<Word>Pausable</Word>
+			<Word>Previewable</Word>
+			<Word>Resetable</Word>
+			<Word>Resumable</Word>
+			<Word>Startable</Word>
+			<Word>Stoppable</Word>
+			<Word>Subscribable</Word>
+			<Word>Synchronizable</Word>
+			<Word>Tokenizer</Word>
+			<Word>Xe</Word>
+		</Recognized>
+		<Unrecognized>
+		</Unrecognized>
+	</Words>
+	<Acronyms>
+		<CasingExceptions>
+			<Acronym>ISO</Acronym>
+			<Acronym>PPID</Acronym>
+			<Acronym>PRIP</Acronym>
+			<Acronym>RT</Acronym>
+			<Acronym>SPN</Acronym>
+			<Acronym>UPN</Acronym>
+			<Acronym>UTF</Acronym>
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>

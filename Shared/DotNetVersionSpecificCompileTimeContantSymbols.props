@@ -1,0 +1,24 @@
+<!--
+***************************************************************************
+Defines the Microsoft .NET Version Specific Compile Time Constant Symbols.
+Modeled from https://msdn.microsoft.com/en-us/library/ms171464.aspx
+***************************************************************************
+-->
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.7.2')))) &gt;= 0">$(DefineConstants);NETFX_V472</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.7.1')))) &gt;= 0">$(DefineConstants);NETFX_V471</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.7'))))   &gt;= 0">$(DefineConstants);NETFX_V47</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.6.2')))) &gt;= 0">$(DefineConstants);NETFX_V462</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.6.1')))) &gt;= 0">$(DefineConstants);NETFX_V461</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.6'))))   &gt;= 0">$(DefineConstants);NETFX_V46</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.5.2')))) &gt;= 0">$(DefineConstants);NETFX_V452</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.5.1')))) &gt;= 0">$(DefineConstants);NETFX_V451</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.5'))))   &gt;= 0">$(DefineConstants);NETFX_V45</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('4.0'))))   &gt;= 0">$(DefineConstants);NETFX_V4</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('3.5'))))   &gt;= 0">$(DefineConstants);NETFX_V35</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('3.0'))))   &gt;= 0">$(DefineConstants);NETFX_V3</DefineConstants>
+		<DefineConstants Condition="$([System.Version]::Parse('$(TargetFrameworkVersion.Substring(1))').CompareTo($([System.Version]::Parse('2.0'))))   &gt;= 0">$(DefineConstants);NETFX_V2</DefineConstants>
+	</PropertyGroup>
+</Project>

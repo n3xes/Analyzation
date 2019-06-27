@@ -1,0 +1,132 @@
+# .NET Desktop
+# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+
+resources:
+- repo: self
+
+pool:
+  vmImage: Hosted VS2017
+  demands:
+  - DotNetFramework
+  - msbuild
+  - visualstudio
+  - vstest
+
+#Your build pipeline references a secret variable named ‘GitHubRespositoryMirroringPATToken’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+variables:
+  Parameters.solution: '**\*.sln'
+
+steps:
+- task: NuGetToolInstaller@0
+  displayName: 'Use NuGet 4.9.x'
+  inputs:
+    versionSpec: 4.9.x
+
+- task: NuGetCommand@2
+  displayName: 'NuGet Restore'
+  inputs:
+    restoreSolution: '$(Parameters.solution)'
+
+- task: dne.dne-build-tasks.dne-build-tasks-change-assembly-versions.ChangeAssemblyVersionsTask@3
+  displayName: 'Update Versions in File ''AssemblyInfo.cs' of Directory 'Source' - Recursive: 'true' '
+  inputs:
+    assemblyInformationalVersionBehaviorString: Custom
+    assemblyInformationalVersionString: '$(NumberVersionMajor).$(NumberVersionMinor)'
+    assemblyInformationalVersionMustExist: true
+    assemblyVersionBehaviorString: Custom
+    assemblyVersionString: '$(NumberVersionMajor).$(NumberVersionMinor)'
+    assemblyVersionMustExist: true
+    assemblyFileVersionBehaviorString: BuildNumber
+    assemblyFileVersionMustExist: true
+    searchDirectory: Source
+
+- task: VSBuild@1
+  displayName: 'Build Solution x64'
+  inputs:
+    solution: '$(Parameters.solution)'
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+    clean: true
+    msbuildArchitecture: x64
+
+- powershell: |
+   # Write your PowerShell commands here.
+   
+   # Use the environment variables input below to pass secret variables to this script.
+   
+   Install-Module Pscx -AllowClobber -Force 
+   
+   Install-Module VSSetup -AllowClobber -Force -Scope CurrentUser
+   
+   Import-VisualStudioVars
+   
+   sn -Ra $(Build.SourcesDirectory)\Source\N3XeS.CSharp.Analyzation\bin\Release\N3XeS.CSharp.Analyzation.dll "$(Build.SourcesDirectory)\Shared\N3XeS.CSharp.Analyzation Identity Private Key.snk"
+   
+   sn -Ra $(Build.SourcesDirectory)\Source\N3XeS.CSharp.Analyzation.UnitTests\bin\Release\N3XeS.CSharp.Analyzation.dll "$(Build.SourcesDirectory)\Shared\N3XeS.CSharp.Analyzation Identity Private Key.snk"
+   
+   sn -Ra $(Build.SourcesDirectory)\Source\N3XeS.CSharp.Analyzation.UnitTests\bin\Release\N3XeS.CSharp.Analyzation.UnitTests.dll "$(Build.SourcesDirectory)\Shared\N3XeS.CSharp.Analyzation Identity Private Key.snk"
+  displayName: 'Enhanced Strong Name Signing PowerShell Script'
+
+- task: VSTest@2
+  displayName: 'VsTest - Test Assemblies'
+  inputs:
+    testAssemblyVer2: |
+     **\$(BuildConfiguration)\*test*.dll
+     !**\obj\**
+    runSettingsFile: TestSettings.runsettings
+    codeCoverageEnabled: true
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+
+- task: mspremier.BuildQualityChecks.QualityChecks-task.BuildQualityChecks@5
+  displayName: 'Check Build Quality'
+  inputs:
+    checkWarnings: true
+    warningFailOption: fixed
+    showStatistics: true
+    checkCoverage: true
+    coverageFailOption: fixed
+    coverageThreshold: 99.914
+    baseDefinitionId: 'Analyzation - Continuous Integration (CI)'
+    baseRepoId: n3xes/Analyzation
+    baseBranchRef: master
+
+- task: nobitagamer.gitmirror.gitmirror-task.gitmirror@0
+  displayName: 'Git Mirror to GitHub'
+  inputs:
+    GitRepoUrl: 'https://$(GitHubRespositoryMirroringPATToken)@github.com/n3xes/$(system.teamProject).git'
+
+- task: PublishSymbols@2
+  displayName: 'Publish Symbols Path'
+  inputs:
+    SearchPattern: '**\bin\**\*.pdb'
+    SymbolServerType: TeamServices
+
+- task: CopyFiles@2
+  displayName: 'Copy Files To: Build Artifact Staging Directory'
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**\bin\$(BuildConfiguration)\**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: Drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+
+- task: NuGetCommand@2
+  displayName: 'NuGet Pack'
+  inputs:
+    command: pack
+    packagesToPack: '**\*.csproj;!**\*UnitTests.csproj'
+    packDestination: '$(Build.ArtifactStagingDirectory)\packages'
+    versioningScheme: byBuildNumber
+
+- task: NuGetCommand@2
+  displayName: 'NuGet Push'
+  inputs:
+    command: push
+    nuGetFeedType: external
+    publishFeedCredentials: 'N3XeS NuGet.Org Feed Connection'
