@@ -27,6 +27,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 	#region Directives
 
 	using System;
+	using System.Collections.Generic;
 	using System.Diagnostics.CodeAnalysis;
 	using System.Globalization;
 
@@ -113,6 +114,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		[ContractAnnotation("value:null => false"),
 		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Justification = "Reviewed.  Suppression is OK here.  Value can be null.", MessageId = "0"),
 		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
+		// ReSharper disable once InconsistentNaming
 		public static Boolean HasNonwhiteSpaceValue([CanBeNull] String value)
 		{
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35)
@@ -143,6 +145,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the provided <paramref name="value"/> value is <see langword="null"/> or empty; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
+		// ReSharper disable once InconsistentNaming
 		public static Boolean HasNoValue(String value)
 		{
 			return String.IsNullOrEmpty(value);
@@ -158,6 +161,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		[ContractAnnotation("value:null => true"),
 		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Justification = "Reviewed.  Suppression is OK here.  Value can be null.", MessageId = "0"),
 		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
+		// ReSharper disable once InconsistentNaming
 		public static Boolean HasNullOrWhiteSpaceValue([CanBeNull] String value)
 		{
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35)
@@ -188,6 +192,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the provided <paramref name="value"/> value is not <see langword="null"/> or empty; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
+		// ReSharper disable once InconsistentNaming
 		public static Boolean HasValue(String value)
 		{
 			return !String.IsNullOrEmpty(value);
@@ -1439,7 +1444,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		[ContractAnnotation("value:null => false")]
 		public static Boolean IsNotNull<T>(T value)
 		{
-			return value != null;
+			return !IsNull(value);
 		}
 
 		/// <summary>
@@ -1454,7 +1459,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		public static Boolean IsNotNull<T>(T? value)
 			where T : struct
 		{
-			return value != null;
+			return !IsNull(value);
 		}
 
 		/// <summary>
@@ -1468,7 +1473,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		[ContractAnnotation("value:null => true")]
 		public static Boolean IsNull<T>(T value)
 		{
-			return value == null;
+			return EqualityComparer<T>.Default.Equals(value, default(T));
 		}
 
 		/// <summary>
@@ -1483,7 +1488,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		public static Boolean IsNull<T>(T? value)
 			where T : struct
 		{
-			return value == null;
+			return EqualityComparer<T?>.Default.Equals(value, default(T?));
 		}
 
 		/// <summary>
@@ -1495,6 +1500,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		[ContractAnnotation("value:null => halt"),
 		 SuppressMessage("Microsoft.Usage", "CA2201:DoNotRaiseReservedExceptionTypes",
 						 Justification = "Reviewed.  Suppression is OK here. This is intended functionality.")]
+		// ReSharper disable once InconsistentNaming
 		public static void RequireIsNotNull<T>(T value)
 		{
 			if (value.IsNull())
@@ -1512,6 +1518,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		[ContractAnnotation("value:null => halt"),
 		 SuppressMessage("Microsoft.Usage", "CA2201:DoNotRaiseReservedExceptionTypes",
 						 Justification = "Reviewed.  Suppression is OK here. This is intended functionality.")]
+		// ReSharper disable once InconsistentNaming
 		public static void RequireIsNull<T>(T? value)
 			where T : struct
 		{
