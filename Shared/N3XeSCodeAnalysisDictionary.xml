@@ -21,6 +21,7 @@
 			<Word>Analyzation</Word>
 			<Word>Applicate</Word>
 			<Word>Behaviour</Word>
+			<Word>Collidable</Word>
 			<Word>Commentable</Word>
 			<Word>Commitable</Word>
 			<Word>Completable</Word>
@@ -31,6 +32,9 @@
 			<Word>Geocoder</Word>
 			<Word>Geocoders</Word>
 			<Word>Globals</Word>
+			<Word>Hitbox</Word>
+			<Word>Hurtable</Word>
+			<Word>Hurtbox</Word>
 			<Word>Hyperfocal</Word>
 			<Word>Ident</Word>
 			<Word>Initializable</Word>
@@ -45,7 +49,10 @@
 			<Word>Pausable</Word>
 			<Word>Previewable</Word>
 			<Word>Resetable</Word>
+			<Word>Respondable</Word>
 			<Word>Resumable</Word>
+			<Word>Serp</Word>
+			<Word>Sinerp</Word>
 			<Word>Startable</Word>
 			<Word>Stoppable</Word>
 			<Word>Subscribable</Word>
