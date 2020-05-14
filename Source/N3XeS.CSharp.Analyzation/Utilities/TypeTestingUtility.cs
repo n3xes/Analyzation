@@ -1,7 +1,7 @@
 ﻿#region Header: Copyright © 2013, John Caruthers
 
 // =====================================================================================================================
-// <copyright file="TypeTestingUtility.cs">
+// <copyright company="John Caruthers" file="TypeTestingUtility.cs">
 //		Copyright © 2013, John Caruthers
 //		All rights reserved.
 //
@@ -15,7 +15,7 @@
 //		FOR A PARTICULAR PURPOSE.SEE THE GNU GENERAL PUBLIC LICENSE FOR MORE DETAILS.
 //
 //		YOU SHOULD HAVE RECEIVED A COPY OF THE GNU GENERAL PUBLIC LICENSE ALONG
-//		WITH THIS PROGRAM.  IF NOT, SEE <https://www.gnu.org/licenses/>.
+//		WITH THIS PROGRAM.  IF NOT, SEE https://www.gnu.org/licenses/.
 //
 // </copyright>
 ////====================================================================================================================
