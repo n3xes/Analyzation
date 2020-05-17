@@ -27,7 +27,6 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 	#region Directives
 
 	using System;
-	using System.Diagnostics;
 	using System.Diagnostics.CodeAnalysis;
 
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35 && !NETFX_V4)
@@ -68,6 +67,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
 	public static class TypeTestingUtility
 	{
 		#region Constants
@@ -107,32 +107,32 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <summary>
 		///		Checks if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type.
 		/// </summary>
-		/// <param name="value">The <see cref="T:System.Object"/> to check.</param>
+		/// <typeparam name="T">
+		///		The type to check if it is not a <see cref="T:System.Nullable`1"/> type.
+		/// </typeparam>
+		/// <param name="value">The <typeparamref name="T"/> to check.</param>
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false"),
 		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods",
 						 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
-		public static Boolean IsNotNullableType(Object value)
+		public static Boolean IsNotNullableType<T>([CanBeNull] T value)
 		{
 			if (value.IsNull())
 			{
 				return false;
 			}
 
-			Type type = value.GetType();
+			Type type = typeof(T);
 
-#if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35 && !NETFX_V4)
+			if (type.IsValueType && 
+				Nullable.GetUnderlyingType(type).IsNotNull())
+			{
+				return false;
+			}
 
-			TypeInfo typeInfo = type.GetTypeInfo();
-
-			Debug.Assert(typeInfo != null, nameof(typeInfo) + " != null");
-
-			return typeInfo.IsValueType && Nullable.GetUnderlyingType(type).IsNull();
-#else
-			return type.IsValueType || Nullable.GetUnderlyingType(type).IsNull();
-#endif
+			return true;
 		}
 
 		/// <summary>
@@ -144,7 +144,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> type is not equal to the <paramref name="typeComparison"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNotTypeOf<T>(T value, Type typeComparison)
+		public static Boolean IsNotTypeOf<T>(T value, [CanBeNull] Type typeComparison)
 		{
 			return value.GetActualType() != typeComparison;
 		}
@@ -166,45 +166,50 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 			Debug.Assert(valueTypeInfo != null, nameof(valueTypeInfo) + " != null");
 
 			return !valueTypeInfo.IsValueType;
+
 #else
+
 			// ReSharper disable once PossibleNullReferenceException
 			Type type = value.GetType();
 
-			Debug.Assert(type != null, nameof(type) + " != null");
-
 			return !type.IsValueType;
+
 #endif
 		}
 
 		/// <summary>
 		///		Checks if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type.
 		/// </summary>
-		/// <param name="value">The <see cref="T:System.Object"/> to check.</param>
+		/// <typeparam name="T">
+		///		The type to check if it is a <see cref="T:System.Nullable`1"/> type.
+		/// </typeparam>
+		/// <param name="value">The <typeparamref name="T"/> to check.</param>
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true"),
 		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods",
 						 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
-		public static Boolean IsNullableType(Object value)
+		public static Boolean IsNullableType<T>([CanBeNull] T value)
 		{
 			if (value.IsNull())
 			{
 				return true;
 			}
 
-			Type type = value.GetType();
+			Type type = typeof(T);
 
-#if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35 && !NETFX_V4)
+			if (!type.IsValueType)
+			{
+				return true;
+			}
 
-			TypeInfo typeInfo = type.GetTypeInfo();
+			if (Nullable.GetUnderlyingType(type).IsNotNull())
+			{
+				return true;
+			}
 
-			Debug.Assert(typeInfo != null, nameof(typeInfo) + " != null");
-
-			return !typeInfo.IsValueType || Nullable.GetUnderlyingType(type).IsNotNull();
-#else
-			return !type.IsValueType || Nullable.GetUnderlyingType(type).IsNotNull();
-#endif
+			return false;
 		}
 
 		/// <summary>
@@ -216,7 +221,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> type is equal to the <paramref name="typeComparison"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsTypeOf<T>(T value, Type typeComparison)
+		public static Boolean IsTypeOf<T>(T value, [CanBeNull] Type typeComparison)
 		{
 			return value.GetActualType() == typeComparison;
 		}
@@ -238,13 +243,14 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 			Debug.Assert(valueTypeInfo != null, nameof(valueTypeInfo) + " != null");
 
 			return valueTypeInfo.IsValueType;
+
 #else
+
 			// ReSharper disable once PossibleNullReferenceException
 			Type type = value.GetType();
 
-			Debug.Assert(type != null, nameof(type) + " != null");
-
 			return type.IsValueType;
+
 #endif
 		}
 

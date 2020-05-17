@@ -58,6 +58,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
 	public static class TypeTestingExtension
 	{
 		#region Constants
@@ -97,12 +98,15 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <summary>
 		///		Checks if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type.
 		/// </summary>
-		/// <param name="value">The <see cref="T:System.Object"/> to check.</param>
+		/// <typeparam name="T">
+		///		The type to check if it is not a <see cref="T:System.Nullable`1"/> type.
+		/// </typeparam>
+		/// <param name="value">The <typeparamref name="T"/> to check.</param>
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotNullableType(this Object value)
+		public static Boolean IsNotNullableType<T>([CanBeNull] this T value)
 		{
 			return TypeTestingUtility.IsNotNullableType(value);
 		}
@@ -116,7 +120,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> type is not equal to the <paramref name="typeComparison"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNotTypeOf<T>(this T value, Type typeComparison)
+		public static Boolean IsNotTypeOf<T>(this T value, [CanBeNull] Type typeComparison)
 		{
 			return TypeTestingUtility.IsNotTypeOf(value, typeComparison);
 		}
@@ -137,12 +141,15 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <summary>
 		///		Checks if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type.
 		/// </summary>
-		/// <param name="value">The <see cref="T:System.Object"/> to check.</param>
+		/// <typeparam name="T">
+		///		The type to check if it is a <see cref="T:System.Nullable`1"/> type.
+		/// </typeparam>
+		/// <param name="value">The <typeparamref name="T"/> to check.</param>
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsNullableTypeOf(this Object value)
+		public static Boolean IsNullableType<T>([CanBeNull] this T value)
 		{
 			return TypeTestingUtility.IsNullableType(value);
 		}
@@ -156,7 +163,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> type is equal to the <paramref name="typeComparison"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsTypeOf<T>(this T value, Type typeComparison)
+		public static Boolean IsTypeOf<T>(this T value, [CanBeNull] Type typeComparison)
 		{
 			return TypeTestingUtility.IsTypeOf(value, typeComparison);
 		}
