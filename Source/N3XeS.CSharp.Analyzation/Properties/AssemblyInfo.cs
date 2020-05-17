@@ -32,7 +32,6 @@ using System.Runtime.InteropServices;
 
 #endregion
 
-
 // System.Reflection
 
 // General Information about an assembly is controlled through the following 
@@ -92,10 +91,10 @@ using System.Runtime.InteropServices;
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
+
 // The following Guid is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("485ddb92-fd42-4002-a432-fff59476f6e4")]
 
 // System.Runtime.CompilerServices
 [assembly: InternalsVisibleTo("N3XeS.CSharp.Analyzation.UnitTests, PublicKey=00240000048000009400000006020000002400005253413100040000010001005180f617f4a8705e297ce657715631e5589d5eeb3cc17ceec4c08a85c7dbb65d0896fd0f2ffa45d93fd28b0f01e5ed4bc36649ed1e29bb08198bf5806dfeece17d81404cc7ee1f5d06cf68a73a79af6d9c06033b24d3cc50ec7e818520e483c2a3549ac218cfbde74ee9c398b1b3ecb92f0f65b55b972c52ae14e076f1f386be")]
 [assembly: InternalsVisibleTo("N3XeS.CSharp.Analyzation.Explorables, PublicKey=00240000048000009400000006020000002400005253413100040000010001005180f617f4a8705e297ce657715631e5589d5eeb3cc17ceec4c08a85c7dbb65d0896fd0f2ffa45d93fd28b0f01e5ed4bc36649ed1e29bb08198bf5806dfeece17d81404cc7ee1f5d06cf68a73a79af6d9c06033b24d3cc50ec7e818520e483c2a3549ac218cfbde74ee9c398b1b3ecb92f0f65b55b972c52ae14e076f1f386be")]
-
