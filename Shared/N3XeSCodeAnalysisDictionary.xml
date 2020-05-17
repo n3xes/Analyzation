@@ -1,17 +1,24 @@
 ﻿<Dictionary>
 	<Words>
 		<Compound>
-			<Term CompoundAlternate="ArgumentValidation">Argumentvalidation</Term>
 			<Term CompoundAlternate="eTag">eTag</Term>
 			<Term CompoundAlternate="ETag">eTag</Term>
 			<Term CompoundAlternate="FocalIn">FocalIn</Term>
+			<Term CompoundAlternate="HitBox">Hitbox</Term>
+			<Term CompoundAlternate="HurtBox">Hurtbox</Term>
 			<Term CompoundAlternate="InLine">InLine</Term>
+			<Term CompoundAlternate="Nonwhite">NonWhite</Term>
 			<Term CompoundAlternate="PlaceMark">Placemark</Term>
+			<Term CompoundAlternate="PushBox">Pushbox</Term>
 			<Term CompoundAlternate="RadioPhone">Radiophone</Term>
+			<Term CompoundAlternate="RigidBody">Rigidbody</Term>
+			<Term CompoundAlternate="RunSetting">runsetting</Term>
+			<Term CompoundAlternate="RunSettings">runsettings</Term>
 			<Term CompoundAlternate="TestIs">TestIs</Term>
 			<Term CompoundAlternate="VoiceOver">Voiceover</Term>
 			<Term CompoundAlternate="WebMail">Webmail</Term>
 			<Term CompoundAlternate="WebSite">Website</Term>
+			<Term CompoundAlternate="WireFrame">Wireframe</Term>
 		</Compound>
 		<Deprecated>
 		</Deprecated>
@@ -21,57 +28,126 @@
 			<Word>Analyzation</Word>
 			<Word>Applicate</Word>
 			<Word>Behaviour</Word>
+			<Word>Caruthers</Word>
+			<Word>Clearable</Word>
 			<Word>Collidable</Word>
+			<Word>Collider</Word>
+			<Word>Colliders</Word>
 			<Word>Commentable</Word>
 			<Word>Commitable</Word>
 			<Word>Completable</Word>
+			<Word>Coroutine</Word>
+			<Word>Coroutines</Word>
+			<Word>Coserp</Word>
+			<Word>Deregister</Word>
+			<Word>Downscale</Word>
+			<Word>Downscaled</Word>
+			<Word>Downscales</Word>
 			<Word>Enableable</Word>
-			<Word>Encapsulator</Word>
 			<Word>Encapsulators</Word>
+			<Word>Explorable</Word>
+			<Word>Explorables</Word>
 			<Word>Focal</Word>
 			<Word>Geocoder</Word>
 			<Word>Geocoders</Word>
 			<Word>Globals</Word>
+			<Word>Grayscale</Word>
 			<Word>Hitbox</Word>
+			<Word>Hitboxes</Word>
+			<Word>Humerous</Word>
 			<Word>Hurtable</Word>
 			<Word>Hurtbox</Word>
+			<Word>Hurtboxes</Word>
 			<Word>Hyperfocal</Word>
 			<Word>Ident</Word>
 			<Word>Initializable</Word>
+			<Word>Interactor</Word>
+			<Word>iOS</Word>
 			<Word>N3XeS</Word>
+			<Word>NetFX</Word>
 			<Word>NeXeS</Word>
+			<Word>Nullable</Word>
+			<Word>Lerp</Word>
+			<Word>Lerps</Word>
 			<Word>Lexer</Word>
 			<Word>Lexers</Word>
+			<Word>Lossless</Word>
 			<Word>Mappable</Word>
+			<Word>Mecanim</Word>
+			<Word>Midsagittal</Word>
+			<Word>Nintendo</Word>
 			<Word>Nonce</Word>
 			<Word>Nonces</Word>
-			<Word>Phonex</Word>
+			<Word>Numerics</Word>
+			<Word>Oculus</Word>
+			<Word>Ootii</Word>
 			<Word>Pausable</Word>
+			<Word>Phonex</Word>
+			<Word>Pickable</Word>
 			<Word>Previewable</Word>
+			<Word>Pushbox</Word>
+			<Word>Pushboxes</Word>
+			<Word>Renderable</Word>
+			<Word>Renderer</Word>
+			<Word>Renderers</Word>
 			<Word>Resetable</Word>
 			<Word>Respondable</Word>
 			<Word>Resumable</Word>
+			<Word>Rhacotis</Word>
+			<Word>Rigidbodies</Word>
+			<Word>Rigidbody</Word>
+			<Word>Rigidbodys</Word>
+			<Word>Sagittal</Word>
+			<Word>Scriptable</Word>
 			<Word>Serp</Word>
 			<Word>Sinerp</Word>
+			<Word>Stadia</Word>
 			<Word>Startable</Word>
 			<Word>Stoppable</Word>
+			<Word>Storable</Word>
 			<Word>Subscribable</Word>
+			<Word>Subwindow</Word>
+			<Word>Suppressions</Word>
 			<Word>Synchronizable</Word>
 			<Word>Tokenizer</Word>
+			<Word>tvOS</Word>
+			<Word>Wwise</Word>
+			<Word>XBox</Word>
+			<Word>XBoX</Word>
 			<Word>Xe</Word>
+			<Word>Xenomurf</Word>
 		</Recognized>
 		<Unrecognized>
 		</Unrecognized>
 	</Words>
 	<Acronyms>
 		<CasingExceptions>
+			<Acronym>DAAB</Acronym>
+			<Acronym>FX</Acronym>
+			<Acronym>GPL</Acronym>
+			<Acronym>GUID</Acronym>
+			<Acronym>GUIDs</Acronym>
 			<Acronym>ISO</Acronym>
+			<Acronym>IOS</Acronym>
+			<Acronym>LGPL</Acronym>
+			<Acronym>MVC</Acronym>
+			<Acronym>MVP</Acronym>
+			<Acronym>MVPC</Acronym>
+			<Acronym>MVVM</Acronym>
+			<Acronym>NETFX</Acronym>
+			<Acronym>PC</Acronym>
+			<Acronym>PS</Acronym>
 			<Acronym>PPID</Acronym>
 			<Acronym>PRIP</Acronym>
 			<Acronym>RT</Acronym>
+			<Acronym>RTPC</Acronym>
+			<Acronym>SDKs</Acronym>
+			<Acronym>SDKS</Acronym>
 			<Acronym>SPN</Acronym>
 			<Acronym>UPN</Acronym>
+			<Acronym>TLMFC</Acronym>
 			<Acronym>UTF</Acronym>
+			<Acronym>XXXX</Acronym>
 		</CasingExceptions>
 	</Acronyms>
 </Dictionary>
