@@ -52,6 +52,7 @@ Included items must then not match any entries in the exclude list to remain inc
 								<Function>^std::.*</Function>
 								<Function>^ATL::.*</Function>
 								<Function>.*::__GetTestMethodInfo.*</Function>
+								<Function>.*\JetBrains.Annotations\..*</Function>
 								<Function>^Microsoft::VisualStudio::CppCodeCoverageFramework::.*</Function>
 								<Function>^Microsoft::VisualStudio::CppUnitTestFramework::.*</Function>
 							</Exclude>
