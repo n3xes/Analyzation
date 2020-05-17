@@ -18,7 +18,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;JETBRAINS_ANNOTATIONS;NETFX_V2;NETFX_V3;NETFX_V35;NETFX_V4;NETFX_V451;NETFX_V452;NETFX_V46;NETFX_V461;NETFX_V462;NETFX_V47;NETFX_V471;NETFX_V472;NETFX_V45;NETFX_V4;NETFX_V35;NETFX_V3;NETFX_V2</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;NETFX_V2;NETFX_V3;NETFX_V35;NETFX_V4;NETFX_V451;NETFX_V452;NETFX_V46;NETFX_V461;NETFX_V462;NETFX_V47;NETFX_V471;NETFX_V472;NETFX_V45;NETFX_V4;NETFX_V35;NETFX_V3;NETFX_V2;NETFX_V45;NETFX_V4;NETFX_V35;NETFX_V3;NETFX_V2</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
@@ -32,7 +32,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;CODE_ANALYSIS;CODE_ANALYSIS;NETFX_V2;NETFX_V3;NETFX_V35;NETFX_V4;NETFX_V451;NETFX_V452;NETFX_V46;NETFX_V461;NETFX_V462;NETFX_V47;NETFX_V471;NETFX_V472;NETFX_V45;NETFX_V4;NETFX_V35;NETFX_V3;NETFX_V2;NETFX_V45;NETFX_V4;NETFX_V35;NETFX_V3;NETFX_V2</DefineConstants>
+    <DefineConstants>TRACE;CODE_ANALYSIS;NETFX_V2;NETFX_V3;NETFX_V35;NETFX_V4;NETFX_V451;NETFX_V452;NETFX_V46;NETFX_V461;NETFX_V462;NETFX_V47;NETFX_V471;NETFX_V472;NETFX_V45;NETFX_V4;NETFX_V35;NETFX_V3;NETFX_V2;NETFX_V45;NETFX_V4;NETFX_V35;NETFX_V3;NETFX_V2;NETFX_V45;NETFX_V4;NETFX_V35;NETFX_V3;NETFX_V2</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
@@ -168,7 +168,8 @@
     <AssemblyOriginatorKeyFile>$(SolutionDir)\Shared\N3XeS.CSharp.Analyzation Identity Public Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Docs\N3XeS.CSharp.Analyzation Class Diagram.cd" />
+    <None Include="Docs\N3XeS.CSharp.Analyzation.cd" />
+    <None Include="Docs\All Tests from N3XeS.CSharp.Analyzation Source.testsession" />
     <None Include="Docs\DotCover\All Tests from N3XeS.CSharp.Analyzation Source.dcvr" />
     <None Include="Docs\DotCover\All Tests from N3XeS.CSharp.Analyzation Source.dcvr.settings" />
     <None Include="Docs\N3XeS.CSharp.Analyzation CodeMap.dgml" />
