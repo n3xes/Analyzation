@@ -1,124 +1,124 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="N3XeS.CSharp.Analyzation.Extensions.EqualityTestingExtension" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="4" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAQAAQAAAAQAAAQAIAQAAAAADAAAAAAIAFAAEAAiAAA=</HashCode>
+      <HashCode>IAQAAQAAAAQAAAQAIAQIAAAADAAAAAAIAFAAEAAiAAA=</HashCode>
       <FileName>Extensions\EqualityTestingExtension.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Extensions.FloatingPointNumberParityTestingExtension" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="7.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Extensions\FloatingPointNumberParityTestingExtension.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Extensions.GenericRelationalTestingExtension" Collapsed="true">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Position X="11" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABABAAAAAAAAAAAAAAAAAAABBAQAAAIAAgAAAABAAAA=</HashCode>
       <FileName>Extensions\GenericRelationalTestingExtension.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Extensions.IntegralParityTestingExtension" Collapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+    <Position X="5.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Extensions\IntegralParityTestingExtension.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Extensions.RelationalTestingExtension" Collapsed="true">
-    <Position X="5.75" Y="1.5" Width="1.5" />
+    <Position X="9.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABABAAAAAAAAAAAAAAAAAAABBAQAAAIAAgAAAABAAAA=</HashCode>
       <FileName>Extensions\RelationalTestingExtension.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Extensions.SignedFloatingPointNumberTestingExtension" Collapsed="true">
-    <Position X="4" Y="2.5" Width="1.5" />
+    <Position X="7.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>Extensions\SignedFloatingPointNumberTestingExtension.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Extensions.SignedIntegralNumberTestingExtension" Collapsed="true">
-    <Position X="7.5" Y="2.5" Width="1.5" />
+    <Position X="11" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>Extensions\SignedIntegralNumberTestingExtension.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Extensions.TypeTestingExtension" Collapsed="true">
-    <Position X="2.25" Y="3.5" Width="1.5" />
+    <Position X="5.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEABAAAACAAAIAAAIAAAAAAAAAAAAAAABAAA=</HashCode>
+      <HashCode>AAAAAAAAEABAAAACAAAIAAAIAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Extensions\TypeTestingExtension.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Properties.Resources" Collapsed="true">
-    <Position X="0.5" Y="2.5" Width="1.5" />
+    <Position X="4" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAAAAAAAAFEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Properties.Settings" Collapsed="true">
-    <Position X="2.25" Y="2.5" Width="1.5" />
+    <Position X="5.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Utilities.EqualityTestingUtility" Collapsed="true">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Position X="5.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAQAAQAAAAQAAAQAIAQAAAAADAAAAAAIAFAAEAAiAAA=</HashCode>
+      <HashCode>IAQAAQAAAAQAAAQAIAQIAAAADAAAAAAIAFAAEAAiAAA=</HashCode>
       <FileName>Utilities\EqualityTestingUtility.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Utilities.FloatingPointNumberParityTestingUtility" Collapsed="true">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Utilities\FloatingPointNumberParityTestingUtility.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Utilities.GenericRelationalTestingUtility" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+    <Position X="4" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABABAAAAAAAAAAAAAAAAAAABBAQAAAIAAgAAAABAAAA=</HashCode>
       <FileName>Utilities\GenericRelationalTestingUtility.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Utilities.IntegralParityTestingUtility" Collapsed="true">
-    <Position X="4" Y="1.5" Width="1.5" />
+    <Position X="7.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Utilities\IntegralParityTestingUtility.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Utilities.RelationalTestingUtility" Collapsed="true">
-    <Position X="7.5" Y="1.5" Width="1.5" />
+    <Position X="11" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABABAAAAAAAAAAAAAAAAAAABBAQAAAIAAgAAAABAAAA=</HashCode>
       <FileName>Utilities\RelationalTestingUtility.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Utilities.SignedFloatingPointNumberTestingUtility" Collapsed="true">
-    <Position X="5.75" Y="2.5" Width="1.5" />
+    <Position X="9.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>Utilities\SignedFloatingPointNumberTestingUtility.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Utilities.SignedIntegralNumberTestingUtility" Collapsed="true">
-    <Position X="0.5" Y="3.5" Width="1.5" />
+    <Position X="4" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>Utilities\SignedIntegralNumberTestingUtility.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="N3XeS.CSharp.Analyzation.Utilities.TypeTestingUtility" Collapsed="true">
-    <Position X="4" Y="3.5" Width="1.5" />
+    <Position X="7.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEABAAAACAAAIAAAIAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Utilities\TypeTestingUtility.cs</FileName>
