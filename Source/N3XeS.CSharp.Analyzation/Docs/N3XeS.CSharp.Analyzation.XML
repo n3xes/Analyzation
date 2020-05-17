@@ -22,7 +22,7 @@
              </Modification>
             </history>
         </member>
-        <member name="M:N3XeS.CSharp.Analyzation.Extensions.EqualityTestingExtension.HasNonwhiteSpaceValue(System.String)">
+        <member name="M:N3XeS.CSharp.Analyzation.Extensions.EqualityTestingExtension.HasNonWhiteSpaceValue(System.String)">
             <summary>
             	Checks if the provided <paramref name="value"/> value is <see langword="null"/>, empty, or white space.
             </summary>
@@ -8544,7 +8544,7 @@
              </Modification>
             </history>
         </member>
-        <member name="M:N3XeS.CSharp.Analyzation.Utilities.EqualityTestingUtility.HasNonwhiteSpaceValue(System.String)">
+        <member name="M:N3XeS.CSharp.Analyzation.Utilities.EqualityTestingUtility.HasNonWhiteSpaceValue(System.String)">
             <summary>
             	Checks if the provided <paramref name="value"/> value is <see langword="null"/>, empty, or white space.
             </summary>
@@ -16962,10 +16962,13 @@
              </Modification>
             </history>
         </member>
-        <member name="M:N3XeS.CSharp.Analyzation.Utilities.TypeTestingUtility.IsNotNullableType(System.Object)">
+        <member name="M:N3XeS.CSharp.Analyzation.Utilities.TypeTestingUtility.IsNotNullableType``1(``0)">
             <summary>
             	Checks if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type.
             </summary>
+            <typeparam name="T">
+            	The type to check if it is not a <see cref="T:System.Nullable`1"/> type.
+            </typeparam>
             <param name="value">The <see cref="T:System.Object"/> to check.</param>
             <returns>
             	<see langword="true"/> if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
@@ -16992,10 +16995,13 @@
             	<see langword="true"/> if the <paramref name="value"/> is not a value type; otherwise, <see langword="false"/>.
             </returns>
         </member>
-        <member name="M:N3XeS.CSharp.Analyzation.Utilities.TypeTestingUtility.IsNullableType(System.Object)">
+        <member name="M:N3XeS.CSharp.Analyzation.Utilities.TypeTestingUtility.IsNullableType``1(``0)">
             <summary>
             	Checks if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type.
             </summary>
+            <typeparam name="T">
+            	The type to check if it is a <see cref="T:System.Nullable`1"/> type.
+            </typeparam>
             <param name="value">The <see cref="T:System.Object"/> to check.</param>
             <returns>
             	<see langword="true"/> if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
