@@ -22,6 +22,10 @@
 
 #endregion
 
+// These were put in to fix problems with 3rd party software misdiagnosing code problems.
+// ReSharper disable UnusedParameter.Global
+// ReSharper disable UnusedTypeParameter
+#pragma warning disable 168
 namespace N3XeS.CSharp.Analyzation.Utilities
 {
 	#region Directives
@@ -68,6 +72,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
+	// ReSharper disable once ClassTooBig
 	public static class EqualityTestingUtility
 	{
 		#region Constants
@@ -115,7 +121,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Justification = "Reviewed.  Suppression is OK here.  Value can be null.", MessageId = "0"),
 		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
 		// ReSharper disable once InconsistentNaming
-		public static Boolean HasNonwhiteSpaceValue([CanBeNull] String value)
+		public static Boolean HasNonWhiteSpaceValue([CanBeNull] String value)
 		{
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35)
 			return !String.IsNullOrWhiteSpace(value);
@@ -125,9 +131,9 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 				return false;
 			}
 
-			foreach (Char character in value)
+			for (Int32 indexValue = 0; indexValue < value.Length; indexValue++)
 			{
-				if (!Char.IsWhiteSpace(character))
+				if (!Char.IsWhiteSpace(value[indexValue]))
 				{
 					return true;
 				}
@@ -146,7 +152,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
 		// ReSharper disable once InconsistentNaming
-		public static Boolean HasNoValue(String value)
+		public static Boolean HasNoValue([CanBeNull] String value)
 		{
 			return String.IsNullOrEmpty(value);
 		}
@@ -172,9 +178,9 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 				return true;
 			}
 
-			foreach (Char character in value)
+			for (Int32 indexValue = 0; indexValue < value.Length; indexValue++)
 			{
-				if (!Char.IsWhiteSpace(character))
+				if (!Char.IsWhiteSpace(value[indexValue]))
 				{
 					return false;
 				}
@@ -193,7 +199,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
 		// ReSharper disable once InconsistentNaming
-		public static Boolean HasValue(String value)
+		public static Boolean HasValue([CanBeNull] String value)
 		{
 			return !String.IsNullOrEmpty(value);
 		}
@@ -391,10 +397,10 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of <typeparamref name="T"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefault<T>(T value)
+		public static Boolean IsDefault<T>([CanBeNull] T value)
 			where T : class
 		{
-			return Object.Equals(value, default(T));
+			return Equals(value, default(T));
 		}
 
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35)
@@ -797,7 +803,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		public static Boolean IsDefaultValue<T>(T value)
 			where T : struct
 		{
-			return Object.Equals(value, default(T));
+			return Equals(value, default(T));
 		}
 
 		/// <summary>
@@ -812,7 +818,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		public static Boolean IsDefaultValue<T>(T? value)
 			where T : struct
 		{
-			return Object.Equals(value, default(T?));
+			return Equals(value, default(T?));
 		}
 
 		/// <summary>
@@ -1008,10 +1014,10 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of <typeparamref name="T"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefault<T>(T value)
+		public static Boolean IsNotDefault<T>([CanBeNull] T value)
 			where T : class
 		{
-			return !Object.Equals(value, default(T));
+			return !Equals(value, default(T));
 		}
 
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35)
@@ -1415,7 +1421,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		public static Boolean IsNotDefaultValue<T>(T value)
 			where T : struct
 		{
-			return !Object.Equals(value, default(T));
+			return !Equals(value, default(T));
 		}
 
 		/// <summary>
@@ -1430,7 +1436,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		public static Boolean IsNotDefaultValue<T>(T? value)
 			where T : struct
 		{
-			return !Object.Equals(value, default(T?));
+			return !Equals(value, default(T?));
 		}
 
 		/// <summary>

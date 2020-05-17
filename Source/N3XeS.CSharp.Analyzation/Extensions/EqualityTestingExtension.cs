@@ -22,6 +22,9 @@
 
 #endregion
 
+// These were put in to fix problems with 3rd party software misdiagnosing code problems.
+// ReSharper disable UnusedParameter.Global
+// ReSharper disable UnusedTypeParameter
 namespace N3XeS.CSharp.Analyzation.Extensions
 {
 	#region Directives
@@ -65,6 +68,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
+	// ReSharper disable once ClassTooBig
 	public static class EqualityTestingExtension
 	{
 		#region Constants
@@ -110,9 +115,10 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[ContractAnnotation("value:null => false"),
 		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
-		public static Boolean HasNonwhiteSpaceValue(this String value)
+		// ReSharper disable once InconsistentNaming
+		public static Boolean HasNonWhiteSpaceValue([CanBeNull] this String value)
 		{
-			return EqualityTestingUtility.HasNonwhiteSpaceValue(value);
+			return EqualityTestingUtility.HasNonWhiteSpaceValue(value);
 		}
 
 		/// <summary>
@@ -123,7 +129,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> value is <see langword="null"/> or empty; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean HasNoValue(this String value)
+		// ReSharper disable once InconsistentNaming
+		public static Boolean HasNoValue([CanBeNull] this String value)
 		{
 			return EqualityTestingUtility.HasNoValue(value);
 		}
@@ -137,7 +144,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[ContractAnnotation("value:null => true"),
 		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
-		public static Boolean HasNullOrWhiteSpaceValue(this String value)
+		// ReSharper disable once InconsistentNaming
+		public static Boolean HasNullOrWhiteSpaceValue([CanBeNull] this String value)
 		{
 			return EqualityTestingUtility.HasNullOrWhiteSpaceValue(value);
 		}
@@ -150,7 +158,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> value is not <see langword="null"/> or empty; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean HasValue(this String value)
+		// ReSharper disable once InconsistentNaming
+		public static Boolean HasValue([CanBeNull] this String value)
 		{
 			return EqualityTestingUtility.HasValue(value);
 		}
@@ -328,7 +337,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of <typeparamref name="T"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefault<T>(this T value)
+		public static Boolean IsDefault<T>([CanBeNull] this T value)
 			where T : class
 		{
 			return EqualityTestingUtility.IsDefault(value);
@@ -925,7 +934,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of <typeparamref name="T"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefault<T>(this T value)
+		public static Boolean IsNotDefault<T>([CanBeNull] this T value)
 			where T : class
 		{
 			return EqualityTestingUtility.IsNotDefault(value);
@@ -1418,7 +1427,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[ContractAnnotation("value:null => halt"),
 		 SuppressMessage("Microsoft.Usage", "CA2201:DoNotRaiseReservedExceptionTypes",
 						 Justification = "Reviewed.  Suppression is OK here. This is intended functionality.")]
-		public static void RequireIsNotNull<T>(this T value)
+		// ReSharper disable once InconsistentNaming
+		public static void RequireIsNotNull<T>([CanBeNull] this T value)
 		{
 			EqualityTestingUtility.RequireIsNotNull(value);
 		}
@@ -1432,7 +1442,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[ContractAnnotation("value:null => halt"),
 		 SuppressMessage("Microsoft.Usage", "CA2201:DoNotRaiseReservedExceptionTypes",
 						 Justification = "Reviewed.  Suppression is OK here. This is intended functionality.")]
-		public static void RequireIsNull<T>(this T? value)
+		// ReSharper disable once InconsistentNaming
+		public static void RequireIsNull<T>([CanBeNull] this T? value)
 			where T : struct
 		{
 			EqualityTestingUtility.RequireIsNull(value);
