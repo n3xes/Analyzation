@@ -28,6 +28,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 
 	using System;
 
+	using JetBrains.Annotations;
+
 	using Extensions;
 
 	#endregion
@@ -56,6 +58,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
 	public static class SignedFloatingPointNumberTestingUtility
 	{
 		#region Constants

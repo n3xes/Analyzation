@@ -34,6 +34,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 
 #endif
 
+	using JetBrains.Annotations;
+
 	using Utilities;
 
 	#endregion
@@ -62,6 +64,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
+	// ReSharper disable once ClassTooBig
 	public static class RelationalTestingExtension
 	{
 		#region Constants

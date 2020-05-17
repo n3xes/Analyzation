@@ -34,6 +34,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 
 #endif
 
+	using JetBrains.Annotations;
+
 	using Extensions;
 
 	#endregion
@@ -62,6 +64,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
 	public static class SignedIntegralNumberTestingUtility
 	{
 		#region Constants

@@ -28,6 +28,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 
 	using System;
 
+	using JetBrains.Annotations;
+
 	using Utilities;
 
 	#endregion
@@ -56,6 +58,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
 	public static class FloatingPointNumberParityTestingExtension
 	{
 		#region Constants

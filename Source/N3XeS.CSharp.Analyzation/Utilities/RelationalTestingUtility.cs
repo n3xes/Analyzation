@@ -34,6 +34,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 
 #endif
 
+	using JetBrains.Annotations;
+
 	using Extensions;
 
 	#endregion
@@ -62,6 +64,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
+	// ReSharper disable once ClassTooBig
 	public static class RelationalTestingUtility
 	{
 		#region Constants
@@ -2606,6 +2610,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 			{
 				return false;
 			}
+
 			return value.IsLessThan(valueBoundUpper) &&
 				   value.IsGreaterThan(valueBoundLower);
 		}
@@ -2628,6 +2633,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 			{
 				return false;
 			}
+
 			return value.IsLessThan(valueBoundUpper) &&
 				   value.IsGreaterThan(valueBoundLower);
 		}

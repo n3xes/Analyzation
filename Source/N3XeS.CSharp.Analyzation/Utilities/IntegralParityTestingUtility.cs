@@ -34,6 +34,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 
 #endif
 
+	using JetBrains.Annotations;
+
 	#endregion
 
 	#region Delegates
@@ -60,6 +62,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
+	// ReSharper disable once ClassTooBig
 	public static class IntegralParityTestingUtility
 	{
 		#region Constants
