@@ -27,6 +27,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 	#region Directives
 
 	using System;
+	using System.Diagnostics.CodeAnalysis;
 
 	using JetBrains.Annotations;
 
@@ -94,6 +95,43 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		#endregion
 
 		#region Methods/Functions
+
+		/// <summary>
+		///		Checks if the <paramref name="valueBoxed"/> is of the provided type <typeparamref name="T"/>.
+		/// </summary>
+		/// <typeparam name="T">The type to test.</typeparam>
+		/// <param name="valueBoxed">
+		///		The boxed <see cref="T:System.Object"/> to check if is of the provided type <typeparamref name="T"/>.
+		/// </param>
+		/// <returns>
+		///		<see langword="true"/> if the <paramref name="valueBoxed"/> is not <see langword="null"/> and of the
+		///		provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
+		/// </returns>
+		[SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter",
+		 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
+		public static Boolean IsBoxedTypeOf<T>([NotNull] this Object valueBoxed)
+		{
+			return TypeTestingUtility.IsBoxedTypeOf<T>(valueBoxed);
+		}
+
+		/// <summary>
+		///		Checks if the <paramref name="valueBoxed"/> is not of the provided type <typeparamref name="T"/>.
+		/// </summary>
+		/// <typeparam name="T">The type to test.</typeparam>
+		/// <param name="valueBoxed">
+		///		The boxed <see cref="T:System.Object"/> to check if is not of the provided type
+		///		<typeparamref name="T"/>.
+		/// </param>
+		/// <returns>
+		///		<see langword="true"/> if the <paramref name="valueBoxed"/> is <see langword="null"/> or is not of the
+		///		provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
+		/// </returns>
+		[SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter",
+		 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
+		public static Boolean IsNotBoxedTypeOf<T>([NotNull] this Object valueBoxed)
+		{
+			return TypeTestingUtility.IsNotBoxedTypeOf<T>(valueBoxed);
+		}
 
 		/// <summary>
 		///		Checks if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type.

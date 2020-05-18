@@ -8440,11 +8440,41 @@
              </Modification>
             </history>
         </member>
-        <member name="M:N3XeS.CSharp.Analyzation.Extensions.TypeTestingExtension.IsNotNullableType(System.Object)">
+        <member name="M:N3XeS.CSharp.Analyzation.Extensions.TypeTestingExtension.IsBoxedTypeOf``1(System.Object)">
+            <summary>
+            	Checks if the <paramref name="valueBoxed"/> is of the provided type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type to test.</typeparam>
+            <param name="valueBoxed">
+            	The boxed <see cref="T:System.Object"/> to check if is of the provided type <typeparamref name="T"/>.
+            </param>
+            <returns>
+            	<see langword="true"/> if the <paramref name="valueBoxed"/> is not <see langword="null"/> and of the
+            	provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:N3XeS.CSharp.Analyzation.Extensions.TypeTestingExtension.IsNotBoxedTypeOf``1(System.Object)">
+            <summary>
+            	Checks if the <paramref name="valueBoxed"/> is not of the provided type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type to test.</typeparam>
+            <param name="valueBoxed">
+            	The boxed <see cref="T:System.Object"/> to check if is not of the provided type
+            	<typeparamref name="T"/>.
+            </param>
+            <returns>
+            	<see langword="true"/> if the <paramref name="valueBoxed"/> is <see langword="null"/> or is not of the
+            	provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:N3XeS.CSharp.Analyzation.Extensions.TypeTestingExtension.IsNotNullableType``1(``0)">
             <summary>
             	Checks if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type.
             </summary>
-            <param name="value">The <see cref="T:System.Object"/> to check.</param>
+            <typeparam name="T">
+            	The type to check if it is not a <see cref="T:System.Nullable`1"/> type.
+            </typeparam>
+            <param name="value">The <typeparamref name="T"/> to check.</param>
             <returns>
             	<see langword="true"/> if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
             </returns>
@@ -8470,11 +8500,14 @@
             	<see langword="true"/> if the <paramref name="value"/> is not a value type; otherwise, <see langword="false"/>.
             </returns>
         </member>
-        <member name="M:N3XeS.CSharp.Analyzation.Extensions.TypeTestingExtension.IsNullableTypeOf(System.Object)">
+        <member name="M:N3XeS.CSharp.Analyzation.Extensions.TypeTestingExtension.IsNullableType``1(``0)">
             <summary>
             	Checks if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type.
             </summary>
-            <param name="value">The <see cref="T:System.Object"/> to check.</param>
+            <typeparam name="T">
+            	The type to check if it is a <see cref="T:System.Nullable`1"/> type.
+            </typeparam>
+            <param name="value">The <typeparamref name="T"/> to check.</param>
             <returns>
             	<see langword="true"/> if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
             </returns>
@@ -16962,6 +16995,33 @@
              </Modification>
             </history>
         </member>
+        <member name="M:N3XeS.CSharp.Analyzation.Utilities.TypeTestingUtility.IsBoxedTypeOf``1(System.Object)">
+            <summary>
+            	Checks if the <paramref name="valueBoxed"/> is of the provided type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type to test.</typeparam>
+            <param name="valueBoxed">
+            	The boxed <see cref="T:System.Object"/> to check if is of the provided type <typeparamref name="T"/>.
+            </param>
+            <returns>
+            	<see langword="true"/> if the <paramref name="valueBoxed"/> is not <see langword="null"/> and of the
+            	provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:N3XeS.CSharp.Analyzation.Utilities.TypeTestingUtility.IsNotBoxedTypeOf``1(System.Object)">
+            <summary>
+            	Checks if the <paramref name="valueBoxed"/> is not of the provided type <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type to test.</typeparam>
+            <param name="valueBoxed">
+            	The boxed <see cref="T:System.Object"/> to check if is not of the provided type
+            	<typeparamref name="T"/>.
+            </param>
+            <returns>
+            	<see langword="true"/> if the <paramref name="valueBoxed"/> is <see langword="null"/> or is not of the
+            	provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
         <member name="M:N3XeS.CSharp.Analyzation.Utilities.TypeTestingUtility.IsNotNullableType``1(``0)">
             <summary>
             	Checks if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type.
@@ -16969,7 +17029,7 @@
             <typeparam name="T">
             	The type to check if it is not a <see cref="T:System.Nullable`1"/> type.
             </typeparam>
-            <param name="value">The <see cref="T:System.Object"/> to check.</param>
+            <param name="value">The <typeparamref name="T"/> to check.</param>
             <returns>
             	<see langword="true"/> if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
             </returns>
@@ -17002,7 +17062,7 @@
             <typeparam name="T">
             	The type to check if it is a <see cref="T:System.Nullable`1"/> type.
             </typeparam>
-            <param name="value">The <see cref="T:System.Object"/> to check.</param>
+            <param name="value">The <typeparamref name="T"/> to check.</param>
             <returns>
             	<see langword="true"/> if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
             </returns>

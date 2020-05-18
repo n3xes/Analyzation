@@ -4758,6 +4758,12 @@
       <DependentUpon>SignedIntegralNumberTestingUtilityTests.cs</DependentUpon>
     </Compile>
     <Compile Include="TypeTestingExtensionTests.cs" />
+    <Compile Include="TypeTestingExtensionTests.IsBoxedTypeOfTest.g.cs">
+      <DependentUpon>TypeTestingExtensionTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypeTestingExtensionTests.IsNotBoxedTypeOfTest.g.cs">
+      <DependentUpon>TypeTestingExtensionTests.cs</DependentUpon>
+    </Compile>
     <Compile Include="TypeTestingExtensionTests.IsNotNullableTypeTest.g.cs">
       <DependentUpon>TypeTestingExtensionTests.cs</DependentUpon>
     </Compile>
@@ -4777,6 +4783,12 @@
       <DependentUpon>TypeTestingExtensionTests.cs</DependentUpon>
     </Compile>
     <Compile Include="TypeTestingUtilityTests.cs" />
+    <Compile Include="TypeTestingUtilityTests.IsBoxedTypeOfTest.g.cs">
+      <DependentUpon>TypeTestingUtilityTests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TypeTestingUtilityTests.IsNotBoxedTypeOfTest.g.cs">
+      <DependentUpon>TypeTestingUtilityTests.cs</DependentUpon>
+    </Compile>
     <Compile Include="TypeTestingUtilityTests.IsNotNullableTypeTest.g.cs">
       <DependentUpon>TypeTestingUtilityTests.cs</DependentUpon>
     </Compile>
