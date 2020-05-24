@@ -131,7 +131,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		public static Boolean IsBetween(this BigInteger value,
 										BigInteger valueBoundLower,
-										BigInteger? valueBoundUpper)
+										[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -146,7 +146,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this BigInteger value,
-										BigInteger? valueBoundLower,
+										[CanBeNull] BigInteger? valueBoundLower,
 										BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -162,8 +162,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this BigInteger value,
-										BigInteger? valueBoundLower,
-										BigInteger? valueBoundUpper)
+										[CanBeNull] BigInteger? valueBoundLower,
+										[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -177,7 +177,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this BigInteger? value,
+		public static Boolean IsBetween([CanBeNull] this BigInteger? value,
 										BigInteger valueBoundLower,
 										BigInteger valueBoundUpper)
 		{
@@ -193,9 +193,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this BigInteger? value,
+		public static Boolean IsBetween([CanBeNull] this BigInteger? value,
 										BigInteger valueBoundLower,
-										BigInteger? valueBoundUpper)
+										[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -209,8 +209,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this BigInteger? value,
-										BigInteger? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this BigInteger? value,
+										[CanBeNull] BigInteger? valueBoundLower,
 										BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -225,9 +225,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this BigInteger? value,
-										BigInteger? valueBoundLower,
-										BigInteger? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this BigInteger? value,
+										[CanBeNull] BigInteger? valueBoundLower,
+										[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -261,7 +261,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		public static Boolean IsBetween(this DateTime value,
 										DateTime valueBoundLower,
-										DateTime? valueBoundUpper)
+										[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -276,7 +276,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this DateTime value,
-										DateTime? valueBoundLower,
+										[CanBeNull] DateTime? valueBoundLower,
 										DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -292,8 +292,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this DateTime value,
-										DateTime? valueBoundLower,
-										DateTime? valueBoundUpper)
+										[CanBeNull] DateTime? valueBoundLower,
+										[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -307,7 +307,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this DateTime? value,
+		public static Boolean IsBetween([CanBeNull] this DateTime? value,
 										DateTime valueBoundLower,
 										DateTime valueBoundUpper)
 		{
@@ -323,9 +323,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this DateTime? value,
+		public static Boolean IsBetween([CanBeNull] this DateTime? value,
 										DateTime valueBoundLower,
-										DateTime? valueBoundUpper)
+										[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -339,8 +339,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this DateTime? value,
-										DateTime? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this DateTime? value,
+										[CanBeNull] DateTime? valueBoundLower,
 										DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -355,9 +355,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this DateTime? value,
-										DateTime? valueBoundLower,
-										DateTime? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this DateTime? value,
+										[CanBeNull] DateTime? valueBoundLower,
+										[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -389,7 +389,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		public static Boolean IsBetween(this Byte value,
 										Byte valueBoundLower,
-										Byte? valueBoundUpper)
+										[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -404,7 +404,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Byte value,
-										Byte? valueBoundLower,
+										[CanBeNull] Byte? valueBoundLower,
 										Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -420,8 +420,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Byte value,
-										Byte? valueBoundLower,
-										Byte? valueBoundUpper)
+										[CanBeNull] Byte? valueBoundLower,
+										[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -435,7 +435,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Byte? value,
+		public static Boolean IsBetween([CanBeNull] this Byte? value,
 										Byte valueBoundLower,
 										Byte valueBoundUpper)
 		{
@@ -451,9 +451,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Byte? value,
+		public static Boolean IsBetween([CanBeNull] this Byte? value,
 										Byte valueBoundLower,
-										Byte? valueBoundUpper)
+										[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -467,8 +467,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Byte? value,
-										Byte? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this Byte? value,
+										[CanBeNull] Byte? valueBoundLower,
 										Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -483,9 +483,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Byte? value,
-										Byte? valueBoundLower,
-										Byte? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this Byte? value,
+										[CanBeNull] Byte? valueBoundLower,
+										[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -517,7 +517,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		public static Boolean IsBetween(this Decimal value,
 										Decimal valueBoundLower,
-										Decimal? valueBoundUpper)
+										[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -532,7 +532,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Decimal value,
-										Decimal? valueBoundLower,
+										[CanBeNull] Decimal? valueBoundLower,
 										Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -548,8 +548,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Decimal value,
-										Decimal? valueBoundLower,
-										Decimal? valueBoundUpper)
+										[CanBeNull] Decimal? valueBoundLower,
+										[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -563,7 +563,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Decimal? value,
+		public static Boolean IsBetween([CanBeNull] this Decimal? value,
 										Decimal valueBoundLower,
 										Decimal valueBoundUpper)
 		{
@@ -579,9 +579,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Decimal? value,
+		public static Boolean IsBetween([CanBeNull] this Decimal? value,
 										Decimal valueBoundLower,
-										Decimal? valueBoundUpper)
+										[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -595,8 +595,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Decimal? value,
-										Decimal? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this Decimal? value,
+										[CanBeNull] Decimal? valueBoundLower,
 										Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -611,9 +611,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Decimal? value,
-										Decimal? valueBoundLower,
-										Decimal? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this Decimal? value,
+										[CanBeNull] Decimal? valueBoundLower,
+										[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -645,7 +645,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		public static Boolean IsBetween(this Double value,
 										Double valueBoundLower,
-										Double? valueBoundUpper)
+										[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -660,7 +660,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Double value,
-										Double? valueBoundLower,
+										[CanBeNull] Double? valueBoundLower,
 										Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -676,8 +676,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Double value,
-										Double? valueBoundLower,
-										Double? valueBoundUpper)
+										[CanBeNull] Double? valueBoundLower,
+										[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -691,7 +691,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Double? value,
+		public static Boolean IsBetween([CanBeNull] this Double? value,
 										Double valueBoundLower,
 										Double valueBoundUpper)
 		{
@@ -707,9 +707,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Double? value,
+		public static Boolean IsBetween([CanBeNull] this Double? value,
 										Double valueBoundLower,
-										Double? valueBoundUpper)
+										[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -723,8 +723,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Double? value,
-										Double? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this Double? value,
+										[CanBeNull] Double? valueBoundLower,
 										Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -739,9 +739,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Double? value,
-										Double? valueBoundLower,
-										Double? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this Double? value,
+										[CanBeNull] Double? valueBoundLower,
+										[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -773,7 +773,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		public static Boolean IsBetween(this Single value,
 										Single valueBoundLower,
-										Single? valueBoundUpper)
+										[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -788,7 +788,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Single value,
-										Single? valueBoundLower,
+										[CanBeNull] Single? valueBoundLower,
 										Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -804,8 +804,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Single value,
-										Single? valueBoundLower,
-										Single? valueBoundUpper)
+										[CanBeNull] Single? valueBoundLower,
+										[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -819,7 +819,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Single? value,
+		public static Boolean IsBetween([CanBeNull] this Single? value,
 										Single valueBoundLower,
 										Single valueBoundUpper)
 		{
@@ -835,9 +835,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Single? value,
+		public static Boolean IsBetween([CanBeNull] this Single? value,
 										Single valueBoundLower,
-										Single? valueBoundUpper)
+										[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -851,8 +851,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Single? value,
-										Single? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this Single? value,
+										[CanBeNull] Single? valueBoundLower,
 										Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -867,9 +867,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Single? value,
-										Single? valueBoundLower,
-										Single? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this Single? value,
+										[CanBeNull] Single? valueBoundLower,
+										[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -901,7 +901,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		public static Boolean IsBetween(this Int32 value,
 										Int32 valueBoundLower,
-										Int32? valueBoundUpper)
+										[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -916,7 +916,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Int32 value,
-										Int32? valueBoundLower,
+										[CanBeNull] Int32? valueBoundLower,
 										Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -932,8 +932,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Int32 value,
-										Int32? valueBoundLower,
-										Int32? valueBoundUpper)
+										[CanBeNull] Int32? valueBoundLower,
+										[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -947,7 +947,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Int32? value,
+		public static Boolean IsBetween([CanBeNull] this Int32? value,
 										Int32 valueBoundLower,
 										Int32 valueBoundUpper)
 		{
@@ -963,9 +963,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Int32? value,
+		public static Boolean IsBetween([CanBeNull] this Int32? value,
 										Int32 valueBoundLower,
-										Int32? valueBoundUpper)
+										[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -979,8 +979,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Int32? value,
-										Int32? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this Int32? value,
+										[CanBeNull] Int32? valueBoundLower,
 										Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -995,9 +995,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Int32? value,
-										Int32? valueBoundLower,
-										Int32? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this Int32? value,
+										[CanBeNull] Int32? valueBoundLower,
+										[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1029,7 +1029,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		public static Boolean IsBetween(this Int64 value,
 										Int64 valueBoundLower,
-										Int64? valueBoundUpper)
+										[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1044,7 +1044,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Int64 value,
-										Int64? valueBoundLower,
+										[CanBeNull] Int64? valueBoundLower,
 										Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1060,8 +1060,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		public static Boolean IsBetween(this Int64 value,
-										Int64? valueBoundLower,
-										Int64? valueBoundUpper)
+										[CanBeNull] Int64? valueBoundLower,
+										[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1075,7 +1075,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Int64? value,
+		public static Boolean IsBetween([CanBeNull] this Int64? value,
 										Int64 valueBoundLower,
 										Int64 valueBoundUpper)
 		{
@@ -1091,9 +1091,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Int64? value,
+		public static Boolean IsBetween([CanBeNull] this Int64? value,
 										Int64 valueBoundLower,
-										Int64? valueBoundUpper)
+										[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1107,8 +1107,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Int64? value,
-										Int64? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this Int64? value,
+										[CanBeNull] Int64? valueBoundLower,
 										Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1123,9 +1123,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsBetween(this Int64? value,
-										Int64? valueBoundLower,
-										Int64? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this Int64? value,
+										[CanBeNull] Int64? valueBoundLower,
+										[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1159,7 +1159,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this SByte value,
 										SByte valueBoundLower,
-										SByte? valueBoundUpper)
+										[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1175,7 +1175,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this SByte value,
-										SByte? valueBoundLower,
+										[CanBeNull] SByte? valueBoundLower,
 										SByte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1192,8 +1192,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this SByte value,
-										SByte? valueBoundLower,
-										SByte? valueBoundUpper)
+										[CanBeNull] SByte? valueBoundLower,
+										[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1208,7 +1208,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this SByte? value,
+		public static Boolean IsBetween([CanBeNull] this SByte? value,
 										SByte valueBoundLower,
 										SByte valueBoundUpper)
 		{
@@ -1225,9 +1225,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this SByte? value,
+		public static Boolean IsBetween([CanBeNull] this SByte? value,
 										SByte valueBoundLower,
-										SByte? valueBoundUpper)
+										[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1242,8 +1242,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this SByte? value,
-										SByte? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this SByte? value,
+										[CanBeNull] SByte? valueBoundLower,
 										SByte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1259,9 +1259,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this SByte? value,
-										SByte? valueBoundLower,
-										SByte? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this SByte? value,
+										[CanBeNull] SByte? valueBoundLower,
+										[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1295,7 +1295,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this Int16 value,
 										Int16 valueBoundLower,
-										Int16? valueBoundUpper)
+										[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1311,7 +1311,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this Int16 value,
-										Int16? valueBoundLower,
+										[CanBeNull] Int16? valueBoundLower,
 										Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1328,8 +1328,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this Int16 value,
-										Int16? valueBoundLower,
-										Int16? valueBoundUpper)
+										[CanBeNull] Int16? valueBoundLower,
+										[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1344,7 +1344,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this Int16? value,
+		public static Boolean IsBetween([CanBeNull] this Int16? value,
 										Int16 valueBoundLower,
 										Int16 valueBoundUpper)
 		{
@@ -1361,9 +1361,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this Int16? value,
+		public static Boolean IsBetween([CanBeNull] this Int16? value,
 										Int16 valueBoundLower,
-										Int16? valueBoundUpper)
+										[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1378,8 +1378,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this Int16? value,
-										Int16? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this Int16? value,
+										[CanBeNull] Int16? valueBoundLower,
 										Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1395,9 +1395,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this Int16? value,
-										Int16? valueBoundLower,
-										Int16? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this Int16? value,
+										[CanBeNull] Int16? valueBoundLower,
+										[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1431,7 +1431,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt32 value,
 										UInt32 valueBoundLower,
-										UInt32? valueBoundUpper)
+										[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1447,7 +1447,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt32 value,
-										UInt32? valueBoundLower,
+										[CanBeNull] UInt32? valueBoundLower,
 										UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1464,8 +1464,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt32 value,
-										UInt32? valueBoundLower,
-										UInt32? valueBoundUpper)
+										[CanBeNull] UInt32? valueBoundLower,
+										[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1480,7 +1480,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt32? value,
+		public static Boolean IsBetween([CanBeNull] this UInt32? value,
 										UInt32 valueBoundLower,
 										UInt32 valueBoundUpper)
 		{
@@ -1497,9 +1497,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt32? value,
+		public static Boolean IsBetween([CanBeNull] this UInt32? value,
 										UInt32 valueBoundLower,
-										UInt32? valueBoundUpper)
+										[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1514,8 +1514,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt32? value,
-										UInt32? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this UInt32? value,
+										[CanBeNull] UInt32? valueBoundLower,
 										UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1531,9 +1531,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt32? value,
-										UInt32? valueBoundLower,
-										UInt32? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this UInt32? value,
+										[CanBeNull] UInt32? valueBoundLower,
+										[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1567,7 +1567,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt64 value,
 										UInt64 valueBoundLower,
-										UInt64? valueBoundUpper)
+										[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1583,7 +1583,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt64 value,
-										UInt64? valueBoundLower,
+										[CanBeNull] UInt64? valueBoundLower,
 										UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1600,8 +1600,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt64 value,
-										UInt64? valueBoundLower,
-										UInt64? valueBoundUpper)
+										[CanBeNull] UInt64? valueBoundLower,
+										[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1616,7 +1616,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt64? value,
+		public static Boolean IsBetween([CanBeNull] this UInt64? value,
 										UInt64 valueBoundLower,
 										UInt64 valueBoundUpper)
 		{
@@ -1633,9 +1633,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt64? value,
+		public static Boolean IsBetween([CanBeNull] this UInt64? value,
 										UInt64 valueBoundLower,
-										UInt64? valueBoundUpper)
+										[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1650,8 +1650,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt64? value,
-										UInt64? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this UInt64? value,
+										[CanBeNull] UInt64? valueBoundLower,
 										UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1667,9 +1667,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt64? value,
-										UInt64? valueBoundLower,
-										UInt64? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this UInt64? value,
+										[CanBeNull] UInt64? valueBoundLower,
+										[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1703,7 +1703,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt16 value,
 										UInt16 valueBoundLower,
-										UInt16? valueBoundUpper)
+										[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1719,7 +1719,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt16 value,
-										UInt16? valueBoundLower,
+										[CanBeNull] UInt16? valueBoundLower,
 										UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1736,8 +1736,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween(this UInt16 value,
-										UInt16? valueBoundLower,
-										UInt16? valueBoundUpper)
+										[CanBeNull] UInt16? valueBoundLower,
+										[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1752,7 +1752,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt16? value,
+		public static Boolean IsBetween([CanBeNull] this UInt16? value,
 										UInt16 valueBoundLower,
 										UInt16 valueBoundUpper)
 		{
@@ -1769,9 +1769,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt16? value,
+		public static Boolean IsBetween([CanBeNull] this UInt16? value,
 										UInt16 valueBoundLower,
-										UInt16? valueBoundUpper)
+										[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1786,8 +1786,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt16? value,
-										UInt16? valueBoundLower,
+		public static Boolean IsBetween([CanBeNull] this UInt16? value,
+										[CanBeNull] UInt16? valueBoundLower,
 										UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -1803,9 +1803,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween(this UInt16? value,
-										UInt16? valueBoundLower,
-										UInt16? valueBoundUpper)
+		public static Boolean IsBetween([CanBeNull] this UInt16? value,
+										[CanBeNull] UInt16? valueBoundLower,
+										[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1841,7 +1841,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this BigInteger value,
 												 BigInteger valueBoundLower,
-												 BigInteger? valueBoundUpper)
+												 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1857,7 +1857,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this BigInteger value,
-												 BigInteger? valueBoundLower,
+												 [CanBeNull] BigInteger? valueBoundLower,
 												 BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -1874,8 +1874,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this BigInteger value,
-												 BigInteger? valueBoundLower,
-												 BigInteger? valueBoundUpper)
+												 [CanBeNull] BigInteger? valueBoundLower,
+												 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1890,7 +1890,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this BigInteger? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this BigInteger? value,
 												 BigInteger valueBoundLower,
 												 BigInteger valueBoundUpper)
 		{
@@ -1907,9 +1907,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this BigInteger? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this BigInteger? value,
 												 BigInteger valueBoundLower,
-												 BigInteger? valueBoundUpper)
+												 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1924,8 +1924,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this BigInteger? value,
-												 BigInteger? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this BigInteger? value,
+												 [CanBeNull] BigInteger? valueBoundLower,
 												 BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -1941,9 +1941,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this BigInteger? value,
-												 BigInteger? valueBoundLower,
-												 BigInteger? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this BigInteger? value,
+												 [CanBeNull] BigInteger? valueBoundLower,
+												 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1979,7 +1979,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this DateTime value,
 												 DateTime valueBoundLower,
-												 DateTime? valueBoundUpper)
+												 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -1995,7 +1995,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this DateTime value,
-												 DateTime? valueBoundLower,
+												 [CanBeNull] DateTime? valueBoundLower,
 												 DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2012,8 +2012,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this DateTime value,
-												 DateTime? valueBoundLower,
-												 DateTime? valueBoundUpper)
+												 [CanBeNull] DateTime? valueBoundLower,
+												 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2028,7 +2028,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this DateTime? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this DateTime? value,
 												 DateTime valueBoundLower,
 												 DateTime valueBoundUpper)
 		{
@@ -2045,9 +2045,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this DateTime? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this DateTime? value,
 												 DateTime valueBoundLower,
-												 DateTime? valueBoundUpper)
+												 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2062,8 +2062,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this DateTime? value,
-												 DateTime? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this DateTime? value,
+												 [CanBeNull] DateTime? valueBoundLower,
 												 DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2079,9 +2079,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this DateTime? value,
-												 DateTime? valueBoundLower,
-												 DateTime? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this DateTime? value,
+												 [CanBeNull] DateTime? valueBoundLower,
+												 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2115,7 +2115,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Byte value,
 												 Byte valueBoundLower,
-												 Byte? valueBoundUpper)
+												 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2131,7 +2131,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Byte value,
-												 Byte? valueBoundLower,
+												 [CanBeNull] Byte? valueBoundLower,
 												 Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2148,8 +2148,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Byte value,
-												 Byte? valueBoundLower,
-												 Byte? valueBoundUpper)
+												 [CanBeNull] Byte? valueBoundLower,
+												 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2164,7 +2164,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Byte? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Byte? value,
 												 Byte valueBoundLower,
 												 Byte valueBoundUpper)
 		{
@@ -2181,9 +2181,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Byte? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Byte? value,
 												 Byte valueBoundLower,
-												 Byte? valueBoundUpper)
+												 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2198,8 +2198,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Byte? value,
-												 Byte? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Byte? value,
+												 [CanBeNull] Byte? valueBoundLower,
 												 Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2215,9 +2215,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Byte? value,
-												 Byte? valueBoundLower,
-												 Byte? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this Byte? value,
+												 [CanBeNull] Byte? valueBoundLower,
+												 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2251,7 +2251,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Decimal value,
 												 Decimal valueBoundLower,
-												 Decimal? valueBoundUpper)
+												 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2267,7 +2267,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Decimal value,
-												 Decimal? valueBoundLower,
+												 [CanBeNull] Decimal? valueBoundLower,
 												 Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2284,8 +2284,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Decimal value,
-												 Decimal? valueBoundLower,
-												 Decimal? valueBoundUpper)
+												 [CanBeNull] Decimal? valueBoundLower,
+												 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2300,7 +2300,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Decimal? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Decimal? value,
 												 Decimal valueBoundLower,
 												 Decimal valueBoundUpper)
 		{
@@ -2317,9 +2317,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Decimal? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Decimal? value,
 												 Decimal valueBoundLower,
-												 Decimal? valueBoundUpper)
+												 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2334,8 +2334,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Decimal? value,
-												 Decimal? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Decimal? value,
+												 [CanBeNull] Decimal? valueBoundLower,
 												 Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2351,9 +2351,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Decimal? value,
-												 Decimal? valueBoundLower,
-												 Decimal? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this Decimal? value,
+												 [CanBeNull] Decimal? valueBoundLower,
+												 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2387,7 +2387,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Double value,
 												 Double valueBoundLower,
-												 Double? valueBoundUpper)
+												 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2403,7 +2403,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Double value,
-												 Double? valueBoundLower,
+												 [CanBeNull] Double? valueBoundLower,
 												 Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2420,8 +2420,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Double value,
-												 Double? valueBoundLower,
-												 Double? valueBoundUpper)
+												 [CanBeNull] Double? valueBoundLower,
+												 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2436,7 +2436,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Double? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Double? value,
 												 Double valueBoundLower,
 												 Double valueBoundUpper)
 		{
@@ -2453,9 +2453,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Double? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Double? value,
 												 Double valueBoundLower,
-												 Double? valueBoundUpper)
+												 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2470,8 +2470,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Double? value,
-												 Double? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Double? value,
+												 [CanBeNull] Double? valueBoundLower,
 												 Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2487,9 +2487,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Double? value,
-												 Double? valueBoundLower,
-												 Double? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this Double? value,
+												 [CanBeNull] Double? valueBoundLower,
+												 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2523,7 +2523,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Single value,
 												 Single valueBoundLower,
-												 Single? valueBoundUpper)
+												 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2539,7 +2539,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Single value,
-												 Single? valueBoundLower,
+												 [CanBeNull] Single? valueBoundLower,
 												 Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2556,8 +2556,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Single value,
-												 Single? valueBoundLower,
-												 Single? valueBoundUpper)
+												 [CanBeNull] Single? valueBoundLower,
+												 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2572,7 +2572,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Single? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Single? value,
 												 Single valueBoundLower,
 												 Single valueBoundUpper)
 		{
@@ -2589,9 +2589,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Single? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Single? value,
 												 Single valueBoundLower,
-												 Single? valueBoundUpper)
+												 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2606,8 +2606,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Single? value,
-												 Single? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Single? value,
+												 [CanBeNull] Single? valueBoundLower,
 												 Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2623,9 +2623,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Single? value,
-												 Single? valueBoundLower,
-												 Single? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this Single? value,
+												 [CanBeNull] Single? valueBoundLower,
+												 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2659,7 +2659,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int32 value,
 												 Int32 valueBoundLower,
-												 Int32? valueBoundUpper)
+												 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2675,7 +2675,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int32 value,
-												 Int32? valueBoundLower,
+												 [CanBeNull] Int32? valueBoundLower,
 												 Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2692,8 +2692,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int32 value,
-												 Int32? valueBoundLower,
-												 Int32? valueBoundUpper)
+												 [CanBeNull] Int32? valueBoundLower,
+												 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2708,7 +2708,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int32? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int32? value,
 												 Int32 valueBoundLower,
 												 Int32 valueBoundUpper)
 		{
@@ -2725,9 +2725,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int32? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int32? value,
 												 Int32 valueBoundLower,
-												 Int32? valueBoundUpper)
+												 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2742,8 +2742,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int32? value,
-												 Int32? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int32? value,
+												 [CanBeNull] Int32? valueBoundLower,
 												 Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2759,9 +2759,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int32? value,
-												 Int32? valueBoundLower,
-												 Int32? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int32? value,
+												 [CanBeNull] Int32? valueBoundLower,
+												 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2795,7 +2795,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int64 value,
 												 Int64 valueBoundLower,
-												 Int64? valueBoundUpper)
+												 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2811,7 +2811,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int64 value,
-												 Int64? valueBoundLower,
+												 [CanBeNull] Int64? valueBoundLower,
 												 Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2828,8 +2828,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int64 value,
-												 Int64? valueBoundLower,
-												 Int64? valueBoundUpper)
+												 [CanBeNull] Int64? valueBoundLower,
+												 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2844,7 +2844,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int64? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int64? value,
 												 Int64 valueBoundLower,
 												 Int64 valueBoundUpper)
 		{
@@ -2861,9 +2861,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int64? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int64? value,
 												 Int64 valueBoundLower,
-												 Int64? valueBoundUpper)
+												 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2878,8 +2878,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int64? value,
-												 Int64? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int64? value,
+												 [CanBeNull] Int64? valueBoundLower,
 												 Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -2895,9 +2895,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int64? value,
-												 Int64? valueBoundLower,
-												 Int64? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int64? value,
+												 [CanBeNull] Int64? valueBoundLower,
+												 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -2980,7 +2980,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this SByte? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this SByte? value,
 												 SByte valueBoundLower,
 												 SByte valueBoundUpper)
 		{
@@ -2997,7 +2997,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this SByte? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this SByte? value,
 												 SByte valueBoundLower,
 												 SByte? valueBoundUpper)
 		{
@@ -3014,7 +3014,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this SByte? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this SByte? value,
 												 SByte? valueBoundLower,
 												 SByte valueBoundUpper)
 		{
@@ -3031,7 +3031,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this SByte? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this SByte? value,
 												 SByte? valueBoundLower,
 												 SByte? valueBoundUpper)
 		{
@@ -3067,7 +3067,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int16 value,
 												 Int16 valueBoundLower,
-												 Int16? valueBoundUpper)
+												 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3083,7 +3083,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int16 value,
-												 Int16? valueBoundLower,
+												 [CanBeNull] Int16? valueBoundLower,
 												 Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -3100,8 +3100,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this Int16 value,
-												 Int16? valueBoundLower,
-												 Int16? valueBoundUpper)
+												 [CanBeNull] Int16? valueBoundLower,
+												 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3116,7 +3116,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int16? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int16? value,
 												 Int16 valueBoundLower,
 												 Int16 valueBoundUpper)
 		{
@@ -3133,9 +3133,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int16? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int16? value,
 												 Int16 valueBoundLower,
-												 Int16? valueBoundUpper)
+												 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3150,8 +3150,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int16? value,
-												 Int16? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int16? value,
+												 [CanBeNull] Int16? valueBoundLower,
 												 Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -3167,9 +3167,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this Int16? value,
-												 Int16? valueBoundLower,
-												 Int16? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this Int16? value,
+												 [CanBeNull] Int16? valueBoundLower,
+												 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3203,7 +3203,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt32 value,
 												 UInt32 valueBoundLower,
-												 UInt32? valueBoundUpper)
+												 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3219,7 +3219,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt32 value,
-												 UInt32? valueBoundLower,
+												 [CanBeNull] UInt32? valueBoundLower,
 												 UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -3236,8 +3236,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt32 value,
-												 UInt32? valueBoundLower,
-												 UInt32? valueBoundUpper)
+												 [CanBeNull] UInt32? valueBoundLower,
+												 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3252,7 +3252,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt32? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt32? value,
 												 UInt32 valueBoundLower,
 												 UInt32 valueBoundUpper)
 		{
@@ -3269,9 +3269,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt32? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt32? value,
 												 UInt32 valueBoundLower,
-												 UInt32? valueBoundUpper)
+												 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3286,8 +3286,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt32? value,
-												 UInt32? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt32? value,
+												 [CanBeNull] UInt32? valueBoundLower,
 												 UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -3303,9 +3303,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt32? value,
-												 UInt32? valueBoundLower,
-												 UInt32? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt32? value,
+												 [CanBeNull] UInt32? valueBoundLower,
+												 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3339,7 +3339,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt64 value,
 												 UInt64 valueBoundLower,
-												 UInt64? valueBoundUpper)
+												 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3355,7 +3355,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt64 value,
-												 UInt64? valueBoundLower,
+												 [CanBeNull] UInt64? valueBoundLower,
 												 UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -3372,8 +3372,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt64 value,
-												 UInt64? valueBoundLower,
-												 UInt64? valueBoundUpper)
+												 [CanBeNull] UInt64? valueBoundLower,
+												 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3388,7 +3388,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt64? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt64? value,
 												 UInt64 valueBoundLower,
 												 UInt64 valueBoundUpper)
 		{
@@ -3405,9 +3405,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt64? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt64? value,
 												 UInt64 valueBoundLower,
-												 UInt64? valueBoundUpper)
+												 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3422,8 +3422,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt64? value,
-												 UInt64? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt64? value,
+												 [CanBeNull] UInt64? valueBoundLower,
 												 UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -3439,9 +3439,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt64? value,
-												 UInt64? valueBoundLower,
-												 UInt64? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt64? value,
+												 [CanBeNull] UInt64? valueBoundLower,
+												 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3475,7 +3475,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt16 value,
 												 UInt16 valueBoundLower,
-												 UInt16? valueBoundUpper)
+												 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3491,7 +3491,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt16 value,
-												 UInt16? valueBoundLower,
+												 [CanBeNull] UInt16? valueBoundLower,
 												 UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -3508,8 +3508,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive(this UInt16 value,
-												 UInt16? valueBoundLower,
-												 UInt16? valueBoundUpper)
+												 [CanBeNull] UInt16? valueBoundLower,
+												 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3524,7 +3524,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt16? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt16? value,
 												 UInt16 valueBoundLower,
 												 UInt16 valueBoundUpper)
 		{
@@ -3541,9 +3541,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt16? value,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt16? value,
 												 UInt16 valueBoundLower,
-												 UInt16? valueBoundUpper)
+												 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3558,8 +3558,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt16? value,
-												 UInt16? valueBoundLower,
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt16? value,
+												 [CanBeNull] UInt16? valueBoundLower,
 												 UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -3575,9 +3575,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive(this UInt16? value,
-												 UInt16? valueBoundLower,
-												 UInt16? valueBoundUpper)
+		public static Boolean IsBetweenExclusive([CanBeNull] this UInt16? value,
+												 [CanBeNull] UInt16? valueBoundLower,
+												 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -3609,7 +3609,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this BigInteger value,
-											BigInteger? valueBoundLower)
+											[CanBeNull] BigInteger? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3623,7 +3623,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this BigInteger? value,
+		public static Boolean IsGreaterThan([CanBeNull] this BigInteger? value,
 											BigInteger valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -3638,8 +3638,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this BigInteger? value,
-											BigInteger? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this BigInteger? value,
+											[CanBeNull] BigInteger? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3671,7 +3671,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this DateTime value,
-											DateTime? valueBoundLower)
+											[CanBeNull] DateTime? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3685,7 +3685,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this DateTime? value,
+		public static Boolean IsGreaterThan([CanBeNull] this DateTime? value,
 											DateTime valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -3700,8 +3700,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this DateTime? value,
-											DateTime? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this DateTime? value,
+											[CanBeNull] DateTime? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3731,7 +3731,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this Byte value,
-											Byte? valueBoundLower)
+											[CanBeNull] Byte? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3745,7 +3745,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Byte? value,
+		public static Boolean IsGreaterThan([CanBeNull] this Byte? value,
 											Byte valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -3760,8 +3760,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Byte? value,
-											Byte? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this Byte? value,
+											[CanBeNull] Byte? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3791,7 +3791,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this Decimal value,
-											Decimal? valueBoundLower)
+											[CanBeNull] Decimal? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3805,7 +3805,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Decimal? value,
+		public static Boolean IsGreaterThan([CanBeNull] this Decimal? value,
 											Decimal valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -3820,8 +3820,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Decimal? value,
-											Decimal? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this Decimal? value,
+											[CanBeNull] Decimal? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3851,7 +3851,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this Double value,
-											Double? valueBoundLower)
+											[CanBeNull] Double? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3865,7 +3865,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Double? value,
+		public static Boolean IsGreaterThan([CanBeNull] this Double? value,
 											Double valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -3880,8 +3880,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Double? value,
-											Double? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this Double? value,
+											[CanBeNull] Double? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3911,7 +3911,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this Single value,
-											Single? valueBoundLower)
+											[CanBeNull] Single? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3925,7 +3925,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Single? value,
+		public static Boolean IsGreaterThan([CanBeNull] this Single? value,
 											Single valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -3940,8 +3940,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Single? value,
-											Single? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this Single? value,
+											[CanBeNull] Single? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3971,7 +3971,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this Int32 value,
-											Int32? valueBoundLower)
+											[CanBeNull] Int32? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -3985,7 +3985,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Int32? value,
+		public static Boolean IsGreaterThan([CanBeNull] this Int32? value,
 											Int32 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -4000,8 +4000,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Int32? value,
-											Int32? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this Int32? value,
+											[CanBeNull] Int32? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4031,7 +4031,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this Int64 value,
-											Int64? valueBoundLower)
+											[CanBeNull] Int64? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4045,7 +4045,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Int64? value,
+		public static Boolean IsGreaterThan([CanBeNull] this Int64? value,
 											Int64 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -4060,8 +4060,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Int64? value,
-											Int64? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this Int64? value,
+											[CanBeNull] Int64? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4091,7 +4091,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this SByte value,
-											SByte? valueBoundLower)
+											[CanBeNull] SByte? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4105,7 +4105,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this SByte? value,
+		public static Boolean IsGreaterThan([CanBeNull] this SByte? value,
 											SByte valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -4120,8 +4120,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this SByte? value,
-											SByte? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this SByte? value,
+											[CanBeNull] SByte? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4151,7 +4151,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this Int16 value,
-											Int16? valueBoundLower)
+											[CanBeNull] Int16? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4165,7 +4165,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Int16? value,
+		public static Boolean IsGreaterThan([CanBeNull] this Int16? value,
 											Int16 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -4180,8 +4180,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this Int16? value,
-											Int16? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this Int16? value,
+											[CanBeNull] Int16? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4211,7 +4211,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this UInt32 value,
-											UInt32? valueBoundLower)
+											[CanBeNull] UInt32? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4225,7 +4225,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this UInt32? value,
+		public static Boolean IsGreaterThan([CanBeNull] this UInt32? value,
 											UInt32 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -4240,8 +4240,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this UInt32? value,
-											UInt32? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this UInt32? value,
+											[CanBeNull] UInt32? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4271,7 +4271,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this UInt64 value,
-											UInt64? valueBoundLower)
+											[CanBeNull] UInt64? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4285,7 +4285,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this UInt64? value,
+		public static Boolean IsGreaterThan([CanBeNull] this UInt64? value,
 											UInt64 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -4300,8 +4300,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this UInt64? value,
-											UInt64? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this UInt64? value,
+											[CanBeNull] UInt64? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4331,7 +4331,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan(this UInt16 value,
-											UInt16? valueBoundLower)
+											[CanBeNull] UInt16? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4345,7 +4345,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this UInt16? value,
+		public static Boolean IsGreaterThan([CanBeNull] this UInt16? value,
 											UInt16 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -4360,8 +4360,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan(this UInt16? value,
-											UInt16? valueBoundLower)
+		public static Boolean IsGreaterThan([CanBeNull] this UInt16? value,
+											[CanBeNull] UInt16? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
 		}
@@ -4393,7 +4393,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this BigInteger value,
-												   BigInteger? valueBoundLower)
+												   [CanBeNull] BigInteger? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4407,7 +4407,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this BigInteger? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this BigInteger? value,
 												   BigInteger valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4422,8 +4422,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this BigInteger? value,
-												   BigInteger? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this BigInteger? value,
+												   [CanBeNull] BigInteger? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4455,7 +4455,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this DateTime value,
-												   DateTime? valueBoundLower)
+												   [CanBeNull] DateTime? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4469,7 +4469,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this DateTime? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this DateTime? value,
 												   DateTime valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4484,8 +4484,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this DateTime? value,
-												   DateTime? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this DateTime? value,
+												   [CanBeNull] DateTime? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4515,7 +4515,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this Byte value,
-												   Byte? valueBoundLower)
+												   [CanBeNull] Byte? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4529,7 +4529,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Byte? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Byte? value,
 												   Byte valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4544,8 +4544,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Byte? value,
-												   Byte? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Byte? value,
+												   [CanBeNull] Byte? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4575,7 +4575,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this Decimal value,
-												   Decimal? valueBoundLower)
+												   [CanBeNull] Decimal? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4589,7 +4589,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Decimal? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Decimal? value,
 												   Decimal valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4604,8 +4604,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Decimal? value,
-												   Decimal? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Decimal? value,
+												   [CanBeNull] Decimal? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4635,7 +4635,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this Double value,
-												   Double? valueBoundLower)
+												   [CanBeNull] Double? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4649,7 +4649,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Double? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Double? value,
 												   Double valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4664,8 +4664,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Double? value,
-												   Double? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Double? value,
+												   [CanBeNull] Double? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4695,7 +4695,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this Single value,
-												   Single? valueBoundLower)
+												   [CanBeNull] Single? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4709,7 +4709,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Single? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Single? value,
 												   Single valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4724,8 +4724,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Single? value,
-												   Single? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Single? value,
+												   [CanBeNull] Single? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4755,7 +4755,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this Int32 value,
-												   Int32? valueBoundLower)
+												   [CanBeNull] Int32? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4769,7 +4769,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Int32? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Int32? value,
 												   Int32 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4784,8 +4784,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Int32? value,
-												   Int32? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Int32? value,
+												   [CanBeNull] Int32? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4815,7 +4815,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this Int64 value,
-												   Int64? valueBoundLower)
+												   [CanBeNull] Int64? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4829,7 +4829,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Int64? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Int64? value,
 												   Int64 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4844,8 +4844,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Int64? value,
-												   Int64? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Int64? value,
+												   [CanBeNull] Int64? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4875,7 +4875,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this SByte value,
-												   SByte? valueBoundLower)
+												   [CanBeNull] SByte? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4889,7 +4889,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this SByte? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this SByte? value,
 												   SByte valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4904,8 +4904,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this SByte? value,
-												   SByte? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this SByte? value,
+												   [CanBeNull] SByte? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4935,7 +4935,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this Int16 value,
-												   Int16? valueBoundLower)
+												   [CanBeNull] Int16? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4949,7 +4949,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Int16? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Int16? value,
 												   Int16 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -4964,8 +4964,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this Int16? value,
-												   Int16? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this Int16? value,
+												   [CanBeNull] Int16? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -4995,7 +4995,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this UInt32 value,
-												   UInt32? valueBoundLower)
+												   [CanBeNull] UInt32? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -5009,7 +5009,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this UInt32? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this UInt32? value,
 												   UInt32 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -5024,8 +5024,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this UInt32? value,
-												   UInt32? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this UInt32? value,
+												   [CanBeNull] UInt32? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -5055,7 +5055,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this UInt64 value,
-												   UInt64? valueBoundLower)
+												   [CanBeNull] UInt64? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -5069,7 +5069,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this UInt64? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this UInt64? value,
 												   UInt64 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -5084,8 +5084,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this UInt64? value,
-												   UInt64? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this UInt64? value,
+												   [CanBeNull] UInt64? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -5115,7 +5115,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual(this UInt16 value,
-												   UInt16? valueBoundLower)
+												   [CanBeNull] UInt16? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -5129,7 +5129,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this UInt16? value,
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this UInt16? value,
 												   UInt16 valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -5144,8 +5144,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual(this UInt16? value,
-												   UInt16? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual([CanBeNull] this UInt16? value,
+												   [CanBeNull] UInt16? valueBoundLower)
 		{
 			return RelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
 		}
@@ -5177,7 +5177,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this BigInteger value,
-										 BigInteger? valueBoundUpper)
+										 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5191,7 +5191,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this BigInteger? value,
+		public static Boolean IsLessThan([CanBeNull] this BigInteger? value,
 										 BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5206,8 +5206,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this BigInteger? value,
-										 BigInteger? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this BigInteger? value,
+										 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5239,7 +5239,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this DateTime value,
-										 DateTime? valueBoundUpper)
+										 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5253,7 +5253,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this DateTime? value,
+		public static Boolean IsLessThan([CanBeNull] this DateTime? value,
 										 DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5268,8 +5268,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this DateTime? value,
-										 DateTime? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this DateTime? value,
+										 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5299,7 +5299,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this Byte value,
-										 Byte? valueBoundUpper)
+										 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5313,7 +5313,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Byte? value,
+		public static Boolean IsLessThan([CanBeNull] this Byte? value,
 										 Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5328,8 +5328,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Byte? value,
-										 Byte? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this Byte? value,
+										 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5359,7 +5359,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this Decimal value,
-										 Decimal? valueBoundUpper)
+										 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5373,7 +5373,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Decimal? value,
+		public static Boolean IsLessThan([CanBeNull] this Decimal? value,
 										 Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5388,8 +5388,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Decimal? value,
-										 Decimal? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this Decimal? value,
+										 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5419,7 +5419,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this Double value,
-										 Double? valueBoundUpper)
+										 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5433,7 +5433,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Double? value,
+		public static Boolean IsLessThan([CanBeNull] this Double? value,
 										 Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5448,8 +5448,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Double? value,
-										 Double? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this Double? value,
+										 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5479,7 +5479,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this Single value,
-										 Single? valueBoundUpper)
+										 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5493,7 +5493,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Single? value,
+		public static Boolean IsLessThan([CanBeNull] this Single? value,
 										 Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5508,8 +5508,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Single? value,
-										 Single? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this Single? value,
+										 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5539,7 +5539,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this Int32 value,
-										 Int32? valueBoundUpper)
+										 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5553,7 +5553,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Int32? value,
+		public static Boolean IsLessThan([CanBeNull] this Int32? value,
 										 Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5568,8 +5568,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Int32? value,
-										 Int32? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this Int32? value,
+										 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5599,7 +5599,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this Int64 value,
-										 Int64? valueBoundUpper)
+										 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5613,7 +5613,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Int64? value,
+		public static Boolean IsLessThan([CanBeNull] this Int64? value,
 										 Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5628,8 +5628,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Int64? value,
-										 Int64? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this Int64? value,
+										 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5673,7 +5673,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this SByte? value,
+		public static Boolean IsLessThan([CanBeNull] this SByte? value,
 										 SByte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5688,7 +5688,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this SByte? value,
+		public static Boolean IsLessThan([CanBeNull] this SByte? value,
 										 SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5719,7 +5719,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this Int16 value,
-										 Int16? valueBoundUpper)
+										 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5733,7 +5733,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Int16? value,
+		public static Boolean IsLessThan([CanBeNull] this Int16? value,
 										 Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5748,8 +5748,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this Int16? value,
-										 Int16? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this Int16? value,
+										 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5779,7 +5779,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this UInt32 value,
-										 UInt32? valueBoundUpper)
+										 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5793,7 +5793,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this UInt32? value,
+		public static Boolean IsLessThan([CanBeNull] this UInt32? value,
 										 UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5808,8 +5808,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this UInt32? value,
-										 UInt32? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this UInt32? value,
+										 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5839,7 +5839,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this UInt64 value,
-										 UInt64? valueBoundUpper)
+										 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5853,7 +5853,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this UInt64? value,
+		public static Boolean IsLessThan([CanBeNull] this UInt64? value,
 										 UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5868,8 +5868,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this UInt64? value,
-										 UInt64? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this UInt64? value,
+										 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5899,7 +5899,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan(this UInt16 value,
-										 UInt16? valueBoundUpper)
+										 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5913,7 +5913,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this UInt16? value,
+		public static Boolean IsLessThan([CanBeNull] this UInt16? value,
 										 UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -5928,8 +5928,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan(this UInt16? value,
-										 UInt16? valueBoundUpper)
+		public static Boolean IsLessThan([CanBeNull] this UInt16? value,
+										 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThan(value, valueBoundUpper);
 		}
@@ -5961,7 +5961,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this BigInteger value,
-												BigInteger? valueBoundUpper)
+												[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -5975,7 +5975,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this BigInteger? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this BigInteger? value,
 												BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -5990,8 +5990,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this BigInteger? value,
-												BigInteger? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this BigInteger? value,
+												[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6023,7 +6023,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this DateTime value,
-												DateTime? valueBoundUpper)
+												[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6037,7 +6037,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this DateTime? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this DateTime? value,
 												DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6052,8 +6052,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this DateTime? value,
-												DateTime? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this DateTime? value,
+												[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6083,7 +6083,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this Byte value,
-												Byte? valueBoundUpper)
+												[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6097,7 +6097,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Byte? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Byte? value,
 												Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6112,8 +6112,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Byte? value,
-												Byte? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Byte? value,
+												[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6143,7 +6143,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this Decimal value,
-												Decimal? valueBoundUpper)
+												[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6157,7 +6157,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Decimal? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Decimal? value,
 												Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6172,8 +6172,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Decimal? value,
-												Decimal? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Decimal? value,
+												[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6203,7 +6203,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this Double value,
-												Double? valueBoundUpper)
+												[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6217,7 +6217,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Double? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Double? value,
 												Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6232,8 +6232,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Double? value,
-												Double? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Double? value,
+												[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6263,7 +6263,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this Single value,
-												Single? valueBoundUpper)
+												[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6277,7 +6277,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Single? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Single? value,
 												Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6292,8 +6292,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Single? value,
-												Single? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Single? value,
+												[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6323,7 +6323,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this Int32 value,
-												Int32? valueBoundUpper)
+												[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6337,7 +6337,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Int32? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Int32? value,
 												Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6352,8 +6352,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Int32? value,
-												Int32? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Int32? value,
+												[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6383,7 +6383,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this Int64 value,
-												Int64? valueBoundUpper)
+												[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6397,7 +6397,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Int64? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Int64? value,
 												Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6412,8 +6412,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Int64? value,
-												Int64? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Int64? value,
+												[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6443,7 +6443,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this SByte value,
-												SByte? valueBoundUpper)
+												[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6457,7 +6457,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this SByte? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this SByte? value,
 												SByte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6472,8 +6472,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this SByte? value,
-												SByte? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this SByte? value,
+												[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6503,7 +6503,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this Int16 value,
-												Int16? valueBoundUpper)
+												[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6517,7 +6517,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Int16? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Int16? value,
 												Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6532,8 +6532,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this Int16? value,
-												Int16? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this Int16? value,
+												[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6563,7 +6563,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this UInt32 value,
-												UInt32? valueBoundUpper)
+												[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6577,7 +6577,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this UInt32? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this UInt32? value,
 												UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6592,8 +6592,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this UInt32? value,
-												UInt32? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this UInt32? value,
+												[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6623,7 +6623,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this UInt64 value,
-												UInt64? valueBoundUpper)
+												[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6637,7 +6637,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this UInt64? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this UInt64? value,
 												UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6652,8 +6652,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this UInt64? value,
-												UInt64? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this UInt64? value,
+												[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6683,7 +6683,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual(this UInt16 value,
-												UInt16? valueBoundUpper)
+												[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6697,7 +6697,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this UInt16? value,
+		public static Boolean IsLessThanOrEqual([CanBeNull] this UInt16? value,
 												UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -6712,8 +6712,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual(this UInt16? value,
-												UInt16? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual([CanBeNull] this UInt16? value,
+												[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
 		}
@@ -6749,7 +6749,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this BigInteger value,
 										BigInteger valueBoundLower,
-										BigInteger? valueBoundUpper)
+										[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -6765,7 +6765,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this BigInteger value,
-										BigInteger? valueBoundLower,
+										[CanBeNull] BigInteger? valueBoundLower,
 										BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -6782,8 +6782,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this BigInteger value,
-										BigInteger? valueBoundLower,
-										BigInteger? valueBoundUpper)
+										[CanBeNull] BigInteger? valueBoundLower,
+										[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -6798,7 +6798,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this BigInteger? value,
+		public static Boolean IsOutside([CanBeNull] this BigInteger? value,
 										BigInteger valueBoundLower,
 										BigInteger valueBoundUpper)
 		{
@@ -6815,9 +6815,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this BigInteger? value,
+		public static Boolean IsOutside([CanBeNull] this BigInteger? value,
 										BigInteger valueBoundLower,
-										BigInteger? valueBoundUpper)
+										[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -6832,8 +6832,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this BigInteger? value,
-										BigInteger? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this BigInteger? value,
+										[CanBeNull] BigInteger? valueBoundLower,
 										BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -6849,9 +6849,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this BigInteger? value,
-										BigInteger? valueBoundLower,
-										BigInteger? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this BigInteger? value,
+										[CanBeNull] BigInteger? valueBoundLower,
+										[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -6887,7 +6887,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this DateTime value,
 										DateTime valueBoundLower,
-										DateTime? valueBoundUpper)
+										[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -6903,7 +6903,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this DateTime value,
-										DateTime? valueBoundLower,
+										[CanBeNull] DateTime? valueBoundLower,
 										DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -6920,8 +6920,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this DateTime value,
-										DateTime? valueBoundLower,
-										DateTime? valueBoundUpper)
+										[CanBeNull] DateTime? valueBoundLower,
+										[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -6936,7 +6936,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this DateTime? value,
+		public static Boolean IsOutside([CanBeNull] this DateTime? value,
 										DateTime valueBoundLower,
 										DateTime valueBoundUpper)
 		{
@@ -6953,9 +6953,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this DateTime? value,
+		public static Boolean IsOutside([CanBeNull] this DateTime? value,
 										DateTime valueBoundLower,
-										DateTime? valueBoundUpper)
+										[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -6970,8 +6970,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this DateTime? value,
-										DateTime? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this DateTime? value,
+										[CanBeNull] DateTime? valueBoundLower,
 										DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -6987,9 +6987,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this DateTime? value,
-										DateTime? valueBoundLower,
-										DateTime? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this DateTime? value,
+										[CanBeNull] DateTime? valueBoundLower,
+										[CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7023,7 +7023,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Byte value,
 										Byte valueBoundLower,
-										Byte? valueBoundUpper)
+										[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7039,7 +7039,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Byte value,
-										Byte? valueBoundLower,
+										[CanBeNull] Byte? valueBoundLower,
 										Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7056,8 +7056,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Byte value,
-										Byte? valueBoundLower,
-										Byte? valueBoundUpper)
+										[CanBeNull] Byte? valueBoundLower,
+										[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7072,7 +7072,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Byte? value,
+		public static Boolean IsOutside([CanBeNull] this Byte? value,
 										Byte valueBoundLower,
 										Byte valueBoundUpper)
 		{
@@ -7089,9 +7089,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Byte? value,
+		public static Boolean IsOutside([CanBeNull] this Byte? value,
 										Byte valueBoundLower,
-										Byte? valueBoundUpper)
+										[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7106,8 +7106,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Byte? value,
-										Byte? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this Byte? value,
+										[CanBeNull] Byte? valueBoundLower,
 										Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7123,9 +7123,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Byte? value,
-										Byte? valueBoundLower,
-										Byte? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this Byte? value,
+										[CanBeNull] Byte? valueBoundLower,
+										[CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7159,7 +7159,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Decimal value,
 										Decimal valueBoundLower,
-										Decimal? valueBoundUpper)
+										[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7175,7 +7175,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Decimal value,
-										Decimal? valueBoundLower,
+										[CanBeNull] Decimal? valueBoundLower,
 										Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7192,8 +7192,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Decimal value,
-										Decimal? valueBoundLower,
-										Decimal? valueBoundUpper)
+										[CanBeNull] Decimal? valueBoundLower,
+										[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7208,7 +7208,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Decimal? value,
+		public static Boolean IsOutside([CanBeNull] this Decimal? value,
 										Decimal valueBoundLower,
 										Decimal valueBoundUpper)
 		{
@@ -7225,9 +7225,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Decimal? value,
+		public static Boolean IsOutside([CanBeNull] this Decimal? value,
 										Decimal valueBoundLower,
-										Decimal? valueBoundUpper)
+										[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7242,8 +7242,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Decimal? value,
-										Decimal? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this Decimal? value,
+										[CanBeNull] Decimal? valueBoundLower,
 										Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7259,9 +7259,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Decimal? value,
-										Decimal? valueBoundLower,
-										Decimal? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this Decimal? value,
+										[CanBeNull] Decimal? valueBoundLower,
+										[CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7295,7 +7295,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Double value,
 										Double valueBoundLower,
-										Double? valueBoundUpper)
+										[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7311,7 +7311,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Double value,
-										Double? valueBoundLower,
+										[CanBeNull] Double? valueBoundLower,
 										Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7328,8 +7328,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Double value,
-										Double? valueBoundLower,
-										Double? valueBoundUpper)
+										[CanBeNull] Double? valueBoundLower,
+										[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7344,7 +7344,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Double? value,
+		public static Boolean IsOutside([CanBeNull] this Double? value,
 										Double valueBoundLower,
 										Double valueBoundUpper)
 		{
@@ -7361,9 +7361,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Double? value,
+		public static Boolean IsOutside([CanBeNull] this Double? value,
 										Double valueBoundLower,
-										Double? valueBoundUpper)
+										[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7378,8 +7378,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Double? value,
-										Double? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this Double? value,
+										[CanBeNull] Double? valueBoundLower,
 										Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7395,9 +7395,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Double? value,
-										Double? valueBoundLower,
-										Double? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this Double? value,
+										[CanBeNull] Double? valueBoundLower,
+										[CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7431,7 +7431,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Single value,
 										Single valueBoundLower,
-										Single? valueBoundUpper)
+										[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7447,7 +7447,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Single value,
-										Single? valueBoundLower,
+										[CanBeNull] Single? valueBoundLower,
 										Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7464,8 +7464,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Single value,
-										Single? valueBoundLower,
-										Single? valueBoundUpper)
+										[CanBeNull] Single? valueBoundLower,
+										[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7480,7 +7480,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Single? value,
+		public static Boolean IsOutside([CanBeNull] this Single? value,
 										Single valueBoundLower,
 										Single valueBoundUpper)
 		{
@@ -7497,9 +7497,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Single? value,
+		public static Boolean IsOutside([CanBeNull] this Single? value,
 										Single valueBoundLower,
-										Single? valueBoundUpper)
+										[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7514,8 +7514,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Single? value,
-										Single? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this Single? value,
+										[CanBeNull] Single? valueBoundLower,
 										Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7531,9 +7531,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Single? value,
-										Single? valueBoundLower,
-										Single? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this Single? value,
+										[CanBeNull] Single? valueBoundLower,
+										[CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7567,7 +7567,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int32 value,
 										Int32 valueBoundLower,
-										Int32? valueBoundUpper)
+										[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7583,7 +7583,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int32 value,
-										Int32? valueBoundLower,
+										[CanBeNull] Int32? valueBoundLower,
 										Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7600,8 +7600,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int32 value,
-										Int32? valueBoundLower,
-										Int32? valueBoundUpper)
+										[CanBeNull] Int32? valueBoundLower,
+										[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7616,7 +7616,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int32? value,
+		public static Boolean IsOutside([CanBeNull] this Int32? value,
 										Int32 valueBoundLower,
 										Int32 valueBoundUpper)
 		{
@@ -7633,9 +7633,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int32? value,
+		public static Boolean IsOutside([CanBeNull] this Int32? value,
 										Int32 valueBoundLower,
-										Int32? valueBoundUpper)
+										[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7650,8 +7650,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int32? value,
-										Int32? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this Int32? value,
+										[CanBeNull] Int32? valueBoundLower,
 										Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7667,9 +7667,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int32? value,
-										Int32? valueBoundLower,
-										Int32? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this Int32? value,
+										[CanBeNull] Int32? valueBoundLower,
+										[CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7703,7 +7703,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int64 value,
 										Int64 valueBoundLower,
-										Int64? valueBoundUpper)
+										[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7719,7 +7719,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int64 value,
-										Int64? valueBoundLower,
+										[CanBeNull] Int64? valueBoundLower,
 										Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7736,8 +7736,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int64 value,
-										Int64? valueBoundLower,
-										Int64? valueBoundUpper)
+										[CanBeNull] Int64? valueBoundLower,
+										[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7752,7 +7752,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int64? value,
+		public static Boolean IsOutside([CanBeNull] this Int64? value,
 										Int64 valueBoundLower,
 										Int64 valueBoundUpper)
 		{
@@ -7769,9 +7769,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int64? value,
+		public static Boolean IsOutside([CanBeNull] this Int64? value,
 										Int64 valueBoundLower,
-										Int64? valueBoundUpper)
+										[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7786,8 +7786,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int64? value,
-										Int64? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this Int64? value,
+										[CanBeNull] Int64? valueBoundLower,
 										Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7803,9 +7803,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int64? value,
-										Int64? valueBoundLower,
-										Int64? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this Int64? value,
+										[CanBeNull] Int64? valueBoundLower,
+										[CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7839,7 +7839,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this SByte value,
 										SByte valueBoundLower,
-										SByte? valueBoundUpper)
+										[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7855,7 +7855,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this SByte value,
-										SByte? valueBoundLower,
+										[CanBeNull] SByte? valueBoundLower,
 										SByte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7872,8 +7872,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this SByte value,
-										SByte? valueBoundLower,
-										SByte? valueBoundUpper)
+										[CanBeNull] SByte? valueBoundLower,
+										[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7888,7 +7888,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this SByte? value,
+		public static Boolean IsOutside([CanBeNull] this SByte? value,
 										SByte valueBoundLower,
 										SByte valueBoundUpper)
 		{
@@ -7905,9 +7905,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this SByte? value,
+		public static Boolean IsOutside([CanBeNull] this SByte? value,
 										SByte valueBoundLower,
-										SByte? valueBoundUpper)
+										[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7922,8 +7922,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this SByte? value,
-										SByte? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this SByte? value,
+										[CanBeNull] SByte? valueBoundLower,
 										SByte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -7939,9 +7939,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this SByte? value,
-										SByte? valueBoundLower,
-										SByte? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this SByte? value,
+										[CanBeNull] SByte? valueBoundLower,
+										[CanBeNull] SByte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7975,7 +7975,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int16 value,
 										Int16 valueBoundLower,
-										Int16? valueBoundUpper)
+										[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -7991,7 +7991,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int16 value,
-										Int16? valueBoundLower,
+										[CanBeNull] Int16? valueBoundLower,
 										Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -8008,8 +8008,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this Int16 value,
-										Int16? valueBoundLower,
-										Int16? valueBoundUpper)
+										[CanBeNull] Int16? valueBoundLower,
+										[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8024,7 +8024,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int16? value,
+		public static Boolean IsOutside([CanBeNull] this Int16? value,
 										Int16 valueBoundLower,
 										Int16 valueBoundUpper)
 		{
@@ -8041,9 +8041,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int16? value,
+		public static Boolean IsOutside([CanBeNull] this Int16? value,
 										Int16 valueBoundLower,
-										Int16? valueBoundUpper)
+										[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8058,8 +8058,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int16? value,
-										Int16? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this Int16? value,
+										[CanBeNull] Int16? valueBoundLower,
 										Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -8075,9 +8075,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this Int16? value,
-										Int16? valueBoundLower,
-										Int16? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this Int16? value,
+										[CanBeNull] Int16? valueBoundLower,
+										[CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8111,7 +8111,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt32 value,
 										UInt32 valueBoundLower,
-										UInt32? valueBoundUpper)
+										[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8127,7 +8127,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt32 value,
-										UInt32? valueBoundLower,
+										[CanBeNull] UInt32? valueBoundLower,
 										UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -8144,8 +8144,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt32 value,
-										UInt32? valueBoundLower,
-										UInt32? valueBoundUpper)
+										[CanBeNull] UInt32? valueBoundLower,
+										[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8160,7 +8160,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt32? value,
+		public static Boolean IsOutside([CanBeNull] this UInt32? value,
 										UInt32 valueBoundLower,
 										UInt32 valueBoundUpper)
 		{
@@ -8177,9 +8177,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt32? value,
+		public static Boolean IsOutside([CanBeNull] this UInt32? value,
 										UInt32 valueBoundLower,
-										UInt32? valueBoundUpper)
+										[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8194,8 +8194,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt32? value,
-										UInt32? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this UInt32? value,
+										[CanBeNull] UInt32? valueBoundLower,
 										UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -8211,9 +8211,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt32? value,
-										UInt32? valueBoundLower,
-										UInt32? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this UInt32? value,
+										[CanBeNull] UInt32? valueBoundLower,
+										[CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8247,7 +8247,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt64 value,
 										UInt64 valueBoundLower,
-										UInt64? valueBoundUpper)
+										[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8263,7 +8263,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt64 value,
-										UInt64? valueBoundLower,
+										[CanBeNull] UInt64? valueBoundLower,
 										UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -8280,8 +8280,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt64 value,
-										UInt64? valueBoundLower,
-										UInt64? valueBoundUpper)
+										[CanBeNull] UInt64? valueBoundLower,
+										[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8296,7 +8296,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt64? value,
+		public static Boolean IsOutside([CanBeNull] this UInt64? value,
 										UInt64 valueBoundLower,
 										UInt64 valueBoundUpper)
 		{
@@ -8313,9 +8313,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt64? value,
+		public static Boolean IsOutside([CanBeNull] this UInt64? value,
 										UInt64 valueBoundLower,
-										UInt64? valueBoundUpper)
+										[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8330,8 +8330,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt64? value,
-										UInt64? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this UInt64? value,
+										[CanBeNull] UInt64? valueBoundLower,
 										UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -8347,9 +8347,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt64? value,
-										UInt64? valueBoundLower,
-										UInt64? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this UInt64? value,
+										[CanBeNull] UInt64? valueBoundLower,
+										[CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8383,7 +8383,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt16 value,
 										UInt16 valueBoundLower,
-										UInt16? valueBoundUpper)
+										[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8399,7 +8399,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt16 value,
-										UInt16? valueBoundLower,
+										[CanBeNull] UInt16? valueBoundLower,
 										UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -8416,8 +8416,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside(this UInt16 value,
-										UInt16? valueBoundLower,
-										UInt16? valueBoundUpper)
+										[CanBeNull] UInt16? valueBoundLower,
+										[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8432,7 +8432,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt16? value,
+		public static Boolean IsOutside([CanBeNull] this UInt16? value,
 										UInt16 valueBoundLower,
 										UInt16 valueBoundUpper)
 		{
@@ -8449,9 +8449,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt16? value,
+		public static Boolean IsOutside([CanBeNull] this UInt16? value,
 										UInt16 valueBoundLower,
-										UInt16? valueBoundUpper)
+										[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8466,8 +8466,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt16? value,
-										UInt16? valueBoundLower,
+		public static Boolean IsOutside([CanBeNull] this UInt16? value,
+										[CanBeNull] UInt16? valueBoundLower,
 										UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -8483,9 +8483,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside(this UInt16? value,
-										UInt16? valueBoundLower,
-										UInt16? valueBoundUpper)
+		public static Boolean IsOutside([CanBeNull] this UInt16? value,
+										[CanBeNull] UInt16? valueBoundLower,
+										[CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8521,7 +8521,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this BigInteger value,
 												 BigInteger valueBoundLower,
-												 BigInteger? valueBoundUpper)
+												 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8537,7 +8537,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this BigInteger value,
-												 BigInteger? valueBoundLower,
+												 [CanBeNull] BigInteger? valueBoundLower,
 												 BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -8554,8 +8554,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this BigInteger value,
-												 BigInteger? valueBoundLower,
-												 BigInteger? valueBoundUpper)
+												 [CanBeNull] BigInteger? valueBoundLower,
+												 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8570,7 +8570,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this BigInteger? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this BigInteger? value,
 												 BigInteger valueBoundLower,
 												 BigInteger valueBoundUpper)
 		{
@@ -8587,9 +8587,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this BigInteger? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this BigInteger? value,
 												 BigInteger valueBoundLower,
-												 BigInteger? valueBoundUpper)
+												 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8604,8 +8604,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this BigInteger? value,
-												 BigInteger? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this BigInteger? value,
+												 [CanBeNull] BigInteger? valueBoundLower,
 												 BigInteger valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -8621,9 +8621,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this BigInteger? value,
-												 BigInteger? valueBoundLower,
-												 BigInteger? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this BigInteger? value,
+												 [CanBeNull] BigInteger? valueBoundLower,
+												 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8659,7 +8659,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this DateTime value,
 												 DateTime valueBoundLower,
-												 DateTime? valueBoundUpper)
+												 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8675,7 +8675,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this DateTime value,
-												 DateTime? valueBoundLower,
+												 [CanBeNull] DateTime? valueBoundLower,
 												 DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -8692,8 +8692,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this DateTime value,
-												 DateTime? valueBoundLower,
-												 DateTime? valueBoundUpper)
+												 [CanBeNull] DateTime? valueBoundLower,
+												 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8708,7 +8708,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this DateTime? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this DateTime? value,
 												 DateTime valueBoundLower,
 												 DateTime valueBoundUpper)
 		{
@@ -8725,9 +8725,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this DateTime? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this DateTime? value,
 												 DateTime valueBoundLower,
-												 DateTime? valueBoundUpper)
+												 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8742,8 +8742,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this DateTime? value,
-												 DateTime? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this DateTime? value,
+												 [CanBeNull] DateTime? valueBoundLower,
 												 DateTime valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -8759,9 +8759,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this DateTime? value,
-												 DateTime? valueBoundLower,
-												 DateTime? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this DateTime? value,
+												 [CanBeNull] DateTime? valueBoundLower,
+												 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8795,7 +8795,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Byte value,
 												 Byte valueBoundLower,
-												 Byte? valueBoundUpper)
+												 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8811,7 +8811,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Byte value,
-												 Byte? valueBoundLower,
+												 [CanBeNull] Byte? valueBoundLower,
 												 Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -8828,8 +8828,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Byte value,
-												 Byte? valueBoundLower,
-												 Byte? valueBoundUpper)
+												 [CanBeNull] Byte? valueBoundLower,
+												 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8844,7 +8844,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Byte? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Byte? value,
 												 Byte valueBoundLower,
 												 Byte valueBoundUpper)
 		{
@@ -8861,9 +8861,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Byte? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Byte? value,
 												 Byte valueBoundLower,
-												 Byte? valueBoundUpper)
+												 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8878,8 +8878,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Byte? value,
-												 Byte? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Byte? value,
+												 [CanBeNull] Byte? valueBoundLower,
 												 Byte valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -8895,9 +8895,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Byte? value,
-												 Byte? valueBoundLower,
-												 Byte? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this Byte? value,
+												 [CanBeNull] Byte? valueBoundLower,
+												 [CanBeNull] Byte? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8931,7 +8931,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Decimal value,
 												 Decimal valueBoundLower,
-												 Decimal? valueBoundUpper)
+												 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8947,7 +8947,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Decimal value,
-												 Decimal? valueBoundLower,
+												 [CanBeNull] Decimal? valueBoundLower,
 												 Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -8964,8 +8964,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Decimal value,
-												 Decimal? valueBoundLower,
-												 Decimal? valueBoundUpper)
+												 [CanBeNull] Decimal? valueBoundLower,
+												 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -8980,7 +8980,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Decimal? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Decimal? value,
 												 Decimal valueBoundLower,
 												 Decimal valueBoundUpper)
 		{
@@ -8997,9 +8997,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Decimal? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Decimal? value,
 												 Decimal valueBoundLower,
-												 Decimal? valueBoundUpper)
+												 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9014,8 +9014,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Decimal? value,
-												 Decimal? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Decimal? value,
+												 [CanBeNull] Decimal? valueBoundLower,
 												 Decimal valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9031,9 +9031,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Decimal? value,
-												 Decimal? valueBoundLower,
-												 Decimal? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this Decimal? value,
+												 [CanBeNull] Decimal? valueBoundLower,
+												 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9067,7 +9067,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Double value,
 												 Double valueBoundLower,
-												 Double? valueBoundUpper)
+												 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9083,7 +9083,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Double value,
-												 Double? valueBoundLower,
+												 [CanBeNull] Double? valueBoundLower,
 												 Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9100,8 +9100,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Double value,
-												 Double? valueBoundLower,
-												 Double? valueBoundUpper)
+												 [CanBeNull] Double? valueBoundLower,
+												 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9116,7 +9116,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Double? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Double? value,
 												 Double valueBoundLower,
 												 Double valueBoundUpper)
 		{
@@ -9133,9 +9133,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Double? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Double? value,
 												 Double valueBoundLower,
-												 Double? valueBoundUpper)
+												 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9150,8 +9150,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Double? value,
-												 Double? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Double? value,
+												 [CanBeNull] Double? valueBoundLower,
 												 Double valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9167,9 +9167,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Double? value,
-												 Double? valueBoundLower,
-												 Double? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this Double? value,
+												 [CanBeNull] Double? valueBoundLower,
+												 [CanBeNull] Double? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9203,7 +9203,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Single value,
 												 Single valueBoundLower,
-												 Single? valueBoundUpper)
+												 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9219,7 +9219,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Single value,
-												 Single? valueBoundLower,
+												 [CanBeNull] Single? valueBoundLower,
 												 Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9236,8 +9236,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Single value,
-												 Single? valueBoundLower,
-												 Single? valueBoundUpper)
+												 [CanBeNull] Single? valueBoundLower,
+												 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9252,7 +9252,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Single? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Single? value,
 												 Single valueBoundLower,
 												 Single valueBoundUpper)
 		{
@@ -9269,9 +9269,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Single? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Single? value,
 												 Single valueBoundLower,
-												 Single? valueBoundUpper)
+												 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9286,8 +9286,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Single? value,
-												 Single? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Single? value,
+												 [CanBeNull] Single? valueBoundLower,
 												 Single valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9303,9 +9303,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Single? value,
-												 Single? valueBoundLower,
-												 Single? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this Single? value,
+												 [CanBeNull] Single? valueBoundLower,
+												 [CanBeNull] Single? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9339,7 +9339,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int32 value,
 												 Int32 valueBoundLower,
-												 Int32? valueBoundUpper)
+												 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9355,7 +9355,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int32 value,
-												 Int32? valueBoundLower,
+												 [CanBeNull] Int32? valueBoundLower,
 												 Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9372,8 +9372,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int32 value,
-												 Int32? valueBoundLower,
-												 Int32? valueBoundUpper)
+												 [CanBeNull] Int32? valueBoundLower,
+												 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9388,7 +9388,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int32? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int32? value,
 												 Int32 valueBoundLower,
 												 Int32 valueBoundUpper)
 		{
@@ -9405,9 +9405,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int32? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int32? value,
 												 Int32 valueBoundLower,
-												 Int32? valueBoundUpper)
+												 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9422,8 +9422,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int32? value,
-												 Int32? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int32? value,
+												 [CanBeNull] Int32? valueBoundLower,
 												 Int32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9439,9 +9439,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int32? value,
-												 Int32? valueBoundLower,
-												 Int32? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int32? value,
+												 [CanBeNull] Int32? valueBoundLower,
+												 [CanBeNull] Int32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9475,7 +9475,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int64 value,
 												 Int64 valueBoundLower,
-												 Int64? valueBoundUpper)
+												 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9491,7 +9491,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int64 value,
-												 Int64? valueBoundLower,
+												 [CanBeNull] Int64? valueBoundLower,
 												 Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9508,8 +9508,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int64 value,
-												 Int64? valueBoundLower,
-												 Int64? valueBoundUpper)
+												 [CanBeNull] Int64? valueBoundLower,
+												 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9524,7 +9524,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int64? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int64? value,
 												 Int64 valueBoundLower,
 												 Int64 valueBoundUpper)
 		{
@@ -9541,9 +9541,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int64? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int64? value,
 												 Int64 valueBoundLower,
-												 Int64? valueBoundUpper)
+												 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9558,8 +9558,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int64? value,
-												 Int64? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int64? value,
+												 [CanBeNull] Int64? valueBoundLower,
 												 Int64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9575,9 +9575,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int64? value,
-												 Int64? valueBoundLower,
-												 Int64? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int64? value,
+												 [CanBeNull] Int64? valueBoundLower,
+												 [CanBeNull] Int64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9660,7 +9660,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this SByte? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this SByte? value,
 												 SByte valueBoundLower,
 												 SByte valueBoundUpper)
 		{
@@ -9677,7 +9677,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this SByte? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this SByte? value,
 												 SByte valueBoundLower,
 												 SByte? valueBoundUpper)
 		{
@@ -9694,7 +9694,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this SByte? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this SByte? value,
 												 SByte? valueBoundLower,
 												 SByte valueBoundUpper)
 		{
@@ -9711,7 +9711,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this SByte? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this SByte? value,
 												 SByte? valueBoundLower,
 												 SByte? valueBoundUpper)
 		{
@@ -9747,7 +9747,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int16 value,
 												 Int16 valueBoundLower,
-												 Int16? valueBoundUpper)
+												 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9763,7 +9763,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int16 value,
-												 Int16? valueBoundLower,
+												 [CanBeNull] Int16? valueBoundLower,
 												 Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9780,8 +9780,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this Int16 value,
-												 Int16? valueBoundLower,
-												 Int16? valueBoundUpper)
+												 [CanBeNull] Int16? valueBoundLower,
+												 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9796,7 +9796,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int16? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int16? value,
 												 Int16 valueBoundLower,
 												 Int16 valueBoundUpper)
 		{
@@ -9813,9 +9813,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int16? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int16? value,
 												 Int16 valueBoundLower,
-												 Int16? valueBoundUpper)
+												 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9830,8 +9830,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int16? value,
-												 Int16? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int16? value,
+												 [CanBeNull] Int16? valueBoundLower,
 												 Int16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9847,9 +9847,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this Int16? value,
-												 Int16? valueBoundLower,
-												 Int16? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this Int16? value,
+												 [CanBeNull] Int16? valueBoundLower,
+												 [CanBeNull] Int16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9883,7 +9883,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt32 value,
 												 UInt32 valueBoundLower,
-												 UInt32? valueBoundUpper)
+												 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9899,7 +9899,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt32 value,
-												 UInt32? valueBoundLower,
+												 [CanBeNull] UInt32? valueBoundLower,
 												 UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9916,8 +9916,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt32 value,
-												 UInt32? valueBoundLower,
-												 UInt32? valueBoundUpper)
+												 [CanBeNull] UInt32? valueBoundLower,
+												 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9932,7 +9932,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt32? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt32? value,
 												 UInt32 valueBoundLower,
 												 UInt32 valueBoundUpper)
 		{
@@ -9949,9 +9949,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt32? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt32? value,
 												 UInt32 valueBoundLower,
-												 UInt32? valueBoundUpper)
+												 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -9966,8 +9966,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt32? value,
-												 UInt32? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt32? value,
+												 [CanBeNull] UInt32? valueBoundLower,
 												 UInt32 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -9983,9 +9983,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt32? value,
-												 UInt32? valueBoundLower,
-												 UInt32? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt32? value,
+												 [CanBeNull] UInt32? valueBoundLower,
+												 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -10019,7 +10019,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt64 value,
 												 UInt64 valueBoundLower,
-												 UInt64? valueBoundUpper)
+												 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -10035,7 +10035,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt64 value,
-												 UInt64? valueBoundLower,
+												 [CanBeNull] UInt64? valueBoundLower,
 												 UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -10052,8 +10052,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt64 value,
-												 UInt64? valueBoundLower,
-												 UInt64? valueBoundUpper)
+												 [CanBeNull] UInt64? valueBoundLower,
+												 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -10068,7 +10068,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt64? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt64? value,
 												 UInt64 valueBoundLower,
 												 UInt64 valueBoundUpper)
 		{
@@ -10085,9 +10085,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt64? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt64? value,
 												 UInt64 valueBoundLower,
-												 UInt64? valueBoundUpper)
+												 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -10102,8 +10102,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt64? value,
-												 UInt64? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt64? value,
+												 [CanBeNull] UInt64? valueBoundLower,
 												 UInt64 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -10119,9 +10119,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt64? value,
-												 UInt64? valueBoundLower,
-												 UInt64? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt64? value,
+												 [CanBeNull] UInt64? valueBoundLower,
+												 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -10155,7 +10155,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt16 value,
 												 UInt16 valueBoundLower,
-												 UInt16? valueBoundUpper)
+												 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -10171,7 +10171,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt16 value,
-												 UInt16? valueBoundLower,
+												 [CanBeNull] UInt16? valueBoundLower,
 												 UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -10188,8 +10188,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive(this UInt16 value,
-												 UInt16? valueBoundLower,
-												 UInt16? valueBoundUpper)
+												 [CanBeNull] UInt16? valueBoundLower,
+												 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -10204,7 +10204,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt16? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt16? value,
 												 UInt16 valueBoundLower,
 												 UInt16 valueBoundUpper)
 		{
@@ -10221,9 +10221,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt16? value,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt16? value,
 												 UInt16 valueBoundLower,
-												 UInt16? valueBoundUpper)
+												 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}
@@ -10238,8 +10238,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt16? value,
-												 UInt16? valueBoundLower,
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt16? value,
+												 [CanBeNull] UInt16? valueBoundLower,
 												 UInt16 valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -10255,9 +10255,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive(this UInt16? value,
-												 UInt16? valueBoundLower,
-												 UInt16? valueBoundUpper)
+		public static Boolean IsOutsideExclusive([CanBeNull] this UInt16? value,
+												 [CanBeNull] UInt16? valueBoundLower,
+												 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			return RelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
 		}

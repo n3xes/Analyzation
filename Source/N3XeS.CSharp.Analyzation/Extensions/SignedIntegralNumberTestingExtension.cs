@@ -122,7 +122,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Numerics.BigInteger"/> value is negative; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNegative(this BigInteger? value)
+		public static Boolean IsNegative([CanBeNull] this BigInteger? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsNegative(value);
 		}
@@ -148,7 +148,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Decimal"/> value is negative; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNegative(this Decimal? value)
+		public static Boolean IsNegative([CanBeNull] this Decimal? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsNegative(value);
 		}
@@ -172,7 +172,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Int32"/> value is negative; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNegative(this Int32? value)
+		public static Boolean IsNegative([CanBeNull] this Int32? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsNegative(value);
 		}
@@ -196,7 +196,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Int64"/> value is negative; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNegative(this Int64? value)
+		public static Boolean IsNegative([CanBeNull] this Int64? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsNegative(value);
 		}
@@ -222,7 +222,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <see cref="T:System.SByte"/> value is negative; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsNegative(this SByte? value)
+		public static Boolean IsNegative([CanBeNull] this SByte? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsNegative(value);
 		}
@@ -246,7 +246,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Int16"/> value is negative; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNegative(this Int16? value)
+		public static Boolean IsNegative([CanBeNull] this Int16? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsNegative(value);
 		}
@@ -272,7 +272,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Numerics.BigInteger"/> value is positive; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsPositive(this BigInteger? value)
+		public static Boolean IsPositive([CanBeNull] this BigInteger? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsPositive(value);
 		}
@@ -298,7 +298,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Decimal"/> value is positive; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsPositive(this Decimal? value)
+		public static Boolean IsPositive([CanBeNull] this Decimal? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsPositive(value);
 		}
@@ -322,7 +322,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Int32"/> value is positive; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsPositive(this Int32? value)
+		public static Boolean IsPositive([CanBeNull] this Int32? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsPositive(value);
 		}
@@ -346,7 +346,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Int64"/> value is positive; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsPositive(this Int64? value)
+		public static Boolean IsPositive([CanBeNull] this Int64? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsPositive(value);
 		}
@@ -372,7 +372,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <see cref="T:System.SByte"/> value is positive; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsPositive(this SByte? value)
+		public static Boolean IsPositive([CanBeNull] this SByte? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsPositive(value);
 		}
@@ -396,7 +396,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Int16"/> value is positive; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsPositive(this Int16? value)
+		public static Boolean IsPositive([CanBeNull] this Int16? value)
 		{
 			return SignedIntegralNumberTestingUtility.IsPositive(value);
 		}

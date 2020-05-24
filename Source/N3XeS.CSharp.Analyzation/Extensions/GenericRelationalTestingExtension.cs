@@ -113,9 +113,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween<T>(this T value,
-										   T valueBoundLower,
-										   T valueBoundUpper)
+		public static Boolean IsBetween<T>([CanBeNull] this T value,
+										   [CanBeNull] T valueBoundLower,
+										   [CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -134,7 +134,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetween<T>(this T value,
 										   T valueBoundLower,
-										   T? valueBoundUpper)
+										   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -152,7 +152,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween<T>(this T value,
-										   T? valueBoundLower,
+										   [CanBeNull] T? valueBoundLower,
 										   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -171,8 +171,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetween<T>(this T value,
-										   T? valueBoundLower,
-										   T? valueBoundUpper)
+										   [CanBeNull] T? valueBoundLower,
+										   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -189,7 +189,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween<T>(this T? value,
+		public static Boolean IsBetween<T>([CanBeNull] this T? value,
 										   T valueBoundLower,
 										   T valueBoundUpper)
 			where T : struct, IComparable<T>
@@ -208,9 +208,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween<T>(this T? value,
+		public static Boolean IsBetween<T>([CanBeNull] this T? value,
 										   T valueBoundLower,
-										   T? valueBoundUpper)
+										   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -227,8 +227,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween<T>(this T? value,
-										   T? valueBoundLower,
+		public static Boolean IsBetween<T>([CanBeNull] this T? value,
+										   [CanBeNull] T? valueBoundLower,
 										   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -246,9 +246,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetween<T>(this T? value,
-										   T? valueBoundLower,
-										   T? valueBoundUpper)
+		public static Boolean IsBetween<T>([CanBeNull] this T? value,
+										   [CanBeNull] T? valueBoundLower,
+										   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetween(value, valueBoundLower, valueBoundUpper);
@@ -265,9 +265,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive<T>(this T value,
-													T valueBoundLower,
-													T valueBoundUpper)
+		public static Boolean IsBetweenExclusive<T>([CanBeNull] this T value,
+													[CanBeNull] T valueBoundLower,
+													[CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -286,7 +286,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive<T>(this T value,
 													T valueBoundLower,
-													T? valueBoundUpper)
+													[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -304,7 +304,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive<T>(this T value,
-													T? valueBoundLower,
+													[CanBeNull] T? valueBoundLower,
 													T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -323,8 +323,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsBetweenExclusive<T>(this T value,
-													T? valueBoundLower,
-													T? valueBoundUpper)
+													[CanBeNull] T? valueBoundLower,
+													[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -341,7 +341,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive<T>(this T? value,
+		public static Boolean IsBetweenExclusive<T>([CanBeNull] this T? value,
 													T valueBoundLower,
 													T valueBoundUpper)
 			where T : struct, IComparable<T>
@@ -360,9 +360,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive<T>(this T? value,
+		public static Boolean IsBetweenExclusive<T>([CanBeNull] this T? value,
 													T valueBoundLower,
-													T? valueBoundUpper)
+													[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -379,8 +379,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive<T>(this T? value,
-													T? valueBoundLower,
+		public static Boolean IsBetweenExclusive<T>([CanBeNull] this T? value,
+													[CanBeNull] T? valueBoundLower,
 													T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -398,9 +398,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsBetweenExclusive<T>(this T? value,
-													T? valueBoundLower,
-													T? valueBoundUpper)
+		public static Boolean IsBetweenExclusive<T>([CanBeNull] this T? value,
+													[CanBeNull] T? valueBoundLower,
+													[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsBetweenExclusive(value, valueBoundLower, valueBoundUpper);
@@ -416,8 +416,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan<T>(this T value,
-											   T valueBoundLower)
+		public static Boolean IsGreaterThan<T>([CanBeNull] this T value,
+											   [CanBeNull] T valueBoundLower)
 			where T : IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -434,7 +434,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThan<T>(this T value,
-											   T? valueBoundLower)
+											   [CanBeNull] T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -450,7 +450,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan<T>(this T? value,
+		public static Boolean IsGreaterThan<T>([CanBeNull] this T? value,
 											   T valueBoundLower)
 			where T : struct, IComparable<T>
 		{
@@ -467,8 +467,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThan<T>(this T? value,
-											   T? valueBoundLower)
+		public static Boolean IsGreaterThan<T>([CanBeNull] this T? value,
+											   [CanBeNull] T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsGreaterThan(value, valueBoundLower);
@@ -484,8 +484,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual<T>(this T value,
-													  T valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual<T>([CanBeNull] this T value,
+													  [CanBeNull] T valueBoundLower)
 			where T : IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -502,7 +502,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsGreaterThanOrEqual<T>(this T value,
-													  T? valueBoundLower)
+													  [CanBeNull] T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -518,7 +518,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual<T>(this T? value,
+		public static Boolean IsGreaterThanOrEqual<T>([CanBeNull] this T? value,
 													  T valueBoundLower)
 			where T : struct, IComparable<T>
 		{
@@ -535,8 +535,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsGreaterThanOrEqual<T>(this T? value,
-													  T? valueBoundLower)
+		public static Boolean IsGreaterThanOrEqual<T>([CanBeNull] this T? value,
+													  [CanBeNull] T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsGreaterThanOrEqual(value, valueBoundLower);
@@ -552,8 +552,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan<T>(this T value,
-											T valueBoundUpper)
+		public static Boolean IsLessThan<T>([CanBeNull] this T value,
+											[CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -570,7 +570,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThan<T>(this T value,
-											T? valueBoundUpper)
+											[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -586,7 +586,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan<T>(this T? value,
+		public static Boolean IsLessThan<T>([CanBeNull] this T? value,
 											T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -603,8 +603,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThan<T>(this T? value,
-											T? valueBoundUpper)
+		public static Boolean IsLessThan<T>([CanBeNull] this T? value,
+											[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsLessThan(value, valueBoundUpper);
@@ -620,8 +620,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual<T>(this T value,
-												   T valueBoundUpper)
+		public static Boolean IsLessThanOrEqual<T>([CanBeNull] this T value,
+												   [CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -638,7 +638,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsLessThanOrEqual<T>(this T value,
-												   T? valueBoundUpper)
+												   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -654,7 +654,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual<T>(this T? value,
+		public static Boolean IsLessThanOrEqual<T>([CanBeNull] this T? value,
 												   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -671,8 +671,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is less than or equal to the <paramref name="valueBoundUpper"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsLessThanOrEqual<T>(this T? value,
-												   T? valueBoundUpper)
+		public static Boolean IsLessThanOrEqual<T>([CanBeNull] this T? value,
+												   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsLessThanOrEqual(value, valueBoundUpper);
@@ -689,9 +689,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside<T>(this T value,
-										   T valueBoundLower,
-										   T valueBoundUpper)
+		public static Boolean IsOutside<T>([CanBeNull] this T value,
+										   [CanBeNull] T valueBoundLower,
+										   [CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -710,7 +710,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutside<T>(this T value,
 										   T valueBoundLower,
-										   T? valueBoundUpper)
+										   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -728,7 +728,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside<T>(this T value,
-										   T? valueBoundLower,
+										   [CanBeNull] T? valueBoundLower,
 										   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -747,8 +747,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutside<T>(this T value,
-										   T? valueBoundLower,
-										   T? valueBoundUpper)
+										   [CanBeNull] T? valueBoundLower,
+										   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -765,7 +765,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside<T>(this T? value,
+		public static Boolean IsOutside<T>([CanBeNull] this T? value,
 										   T valueBoundLower,
 										   T valueBoundUpper)
 			where T : struct, IComparable<T>
@@ -784,9 +784,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside<T>(this T? value,
+		public static Boolean IsOutside<T>([CanBeNull] this T? value,
 										   T valueBoundLower,
-										   T? valueBoundUpper)
+										   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -803,8 +803,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside<T>(this T? value,
-										   T? valueBoundLower,
+		public static Boolean IsOutside<T>([CanBeNull] this T? value,
+										   [CanBeNull] T? valueBoundLower,
 										   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -822,9 +822,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than or equal to the <paramref name="valueBoundUpper"/> and less than or equal to the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutside<T>(this T? value,
-										   T? valueBoundLower,
-										   T? valueBoundUpper)
+		public static Boolean IsOutside<T>([CanBeNull] this T? value,
+										   [CanBeNull] T? valueBoundLower,
+										   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutside(value, valueBoundLower, valueBoundUpper);
@@ -841,9 +841,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive<T>(this T value,
-													T valueBoundLower,
-													T valueBoundUpper)
+		public static Boolean IsOutsideExclusive<T>([CanBeNull] this T value,
+													[CanBeNull] T valueBoundLower,
+													[CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -862,7 +862,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive<T>(this T value,
 													T valueBoundLower,
-													T? valueBoundUpper)
+													[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -880,7 +880,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive<T>(this T value,
-													T? valueBoundLower,
+													[CanBeNull] T? valueBoundLower,
 													T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -899,8 +899,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false)]
 		public static Boolean IsOutsideExclusive<T>(this T value,
-													T? valueBoundLower,
-													T? valueBoundUpper)
+													[CanBeNull] T? valueBoundLower,
+													[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -917,7 +917,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive<T>(this T? value,
+		public static Boolean IsOutsideExclusive<T>([CanBeNull] this T? value,
 													T valueBoundLower,
 													T valueBoundUpper)
 			where T : struct, IComparable<T>
@@ -936,9 +936,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive<T>(this T? value,
+		public static Boolean IsOutsideExclusive<T>([CanBeNull] this T? value,
 													T valueBoundLower,
-													T? valueBoundUpper)
+													[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);
@@ -955,8 +955,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive<T>(this T? value,
-													T? valueBoundLower,
+		public static Boolean IsOutsideExclusive<T>([CanBeNull] this T? value,
+													[CanBeNull] T? valueBoundLower,
 													T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -974,9 +974,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="value"/> is greater than the <paramref name="valueBoundUpper"/> and less than the <paramref name="valueBoundLower"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOutsideExclusive<T>(this T? value,
-													T? valueBoundLower,
-													T? valueBoundUpper)
+		public static Boolean IsOutsideExclusive<T>([CanBeNull] this T? value,
+													[CanBeNull] T? valueBoundLower,
+													[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			return GenericRelationalTestingUtility.IsOutsideExclusive(value, valueBoundLower, valueBoundUpper);

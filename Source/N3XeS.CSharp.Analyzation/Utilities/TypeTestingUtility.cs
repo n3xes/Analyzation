@@ -181,7 +181,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> type is not equal to the <paramref name="typeComparison"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNotTypeOf<T>(T value, [CanBeNull] Type typeComparison)
+		public static Boolean IsNotTypeOf<T>([CanBeNull] T value, [CanBeNull] Type typeComparison)
 		{
 			return value.GetActualType() != typeComparison;
 		}
@@ -194,7 +194,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is not a value type; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNotValueTypeOf<T>(T value)
+		public static Boolean IsNotValueTypeOf<T>([CanBeNull] T value)
 		{
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35 && !NETFX_V4)
 
@@ -258,7 +258,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> type is equal to the <paramref name="typeComparison"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsTypeOf<T>(T value, [CanBeNull] Type typeComparison)
+		public static Boolean IsTypeOf<T>([CanBeNull] T value, [CanBeNull] Type typeComparison)
 		{
 			return value.GetActualType() == typeComparison;
 		}
@@ -271,7 +271,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is a value type; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsValueTypeOf<T>(T value)
+		public static Boolean IsValueTypeOf<T>([CanBeNull] T value)
 		{
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35 && !NETFX_V4)
 

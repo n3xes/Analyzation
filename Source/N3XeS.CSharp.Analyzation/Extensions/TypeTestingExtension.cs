@@ -109,7 +109,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter",
 		 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
-		public static Boolean IsBoxedTypeOf<T>([NotNull] this Object valueBoxed)
+		public static Boolean IsBoxedTypeOf<T>([CanBeNull] this Object valueBoxed)
 		{
 			return TypeTestingUtility.IsBoxedTypeOf<T>(valueBoxed);
 		}
@@ -128,7 +128,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter",
 		 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
-		public static Boolean IsNotBoxedTypeOf<T>([NotNull] this Object valueBoxed)
+		public static Boolean IsNotBoxedTypeOf<T>([CanBeNull] this Object valueBoxed)
 		{
 			return TypeTestingUtility.IsNotBoxedTypeOf<T>(valueBoxed);
 		}
@@ -158,7 +158,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> type is not equal to the <paramref name="typeComparison"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNotTypeOf<T>(this T value, [CanBeNull] Type typeComparison)
+		public static Boolean IsNotTypeOf<T>([CanBeNull] this T value, [CanBeNull] Type typeComparison)
 		{
 			return TypeTestingUtility.IsNotTypeOf(value, typeComparison);
 		}
@@ -171,7 +171,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is not a value type; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNotValueTypeOf<T>(this T value)
+		public static Boolean IsNotValueTypeOf<T>([CanBeNull] this T value)
 		{
 			return TypeTestingUtility.IsNotValueTypeOf(value);
 		}
@@ -201,7 +201,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> type is equal to the <paramref name="typeComparison"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsTypeOf<T>(this T value, [CanBeNull] Type typeComparison)
+		public static Boolean IsTypeOf<T>([CanBeNull] this T value, [CanBeNull] Type typeComparison)
 		{
 			return TypeTestingUtility.IsTypeOf(value, typeComparison);
 		}
@@ -214,7 +214,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is a value type; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsValueTypeOf<T>(this T value)
+		public static Boolean IsValueTypeOf<T>([CanBeNull] this T value)
 		{
 			return TypeTestingUtility.IsValueTypeOf(value);
 		}

@@ -114,7 +114,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(this Double? value)
+		public static Boolean IsEven([CanBeNull] this Double? value)
 		{
 			return FloatingPointNumberParityTestingUtility.IsEven(value);
 		}
@@ -138,7 +138,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(this Single? value)
+		public static Boolean IsEven([CanBeNull] this Single? value)
 		{
 			return FloatingPointNumberParityTestingUtility.IsEven(value);
 		}
@@ -162,7 +162,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(this Double? value)
+		public static Boolean IsOdd([CanBeNull] this Double? value)
 		{
 			return FloatingPointNumberParityTestingUtility.IsOdd(value);
 		}
@@ -186,7 +186,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(this Single? value)
+		public static Boolean IsOdd([CanBeNull] this Single? value)
 		{
 			return FloatingPointNumberParityTestingUtility.IsOdd(value);
 		}

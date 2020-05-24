@@ -121,7 +121,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(BigInteger? value)
+		public static Boolean IsEven([CanBeNull] BigInteger? value)
 		{
 			return value.HasValue && value.GetValueOrDefault().IsEven;
 		}
@@ -147,7 +147,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Byte"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(Byte? value)
+		public static Boolean IsEven([CanBeNull] Byte? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -171,7 +171,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(Decimal? value)
+		public static Boolean IsEven([CanBeNull] Decimal? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -195,7 +195,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(Int32? value)
+		public static Boolean IsEven([CanBeNull] Int32? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -219,7 +219,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(Int64? value)
+		public static Boolean IsEven([CanBeNull] Int64? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -245,7 +245,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsEven(SByte? value)
+		public static Boolean IsEven([CanBeNull] SByte? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -269,7 +269,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(Int16? value)
+		public static Boolean IsEven([CanBeNull] Int16? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -295,7 +295,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsEven(UInt32? value)
+		public static Boolean IsEven([CanBeNull] UInt32? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -321,7 +321,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsEven(UInt64? value)
+		public static Boolean IsEven([CanBeNull] UInt64? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -347,7 +347,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/> value is even; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsEven(UInt16? value)
+		public static Boolean IsEven([CanBeNull] UInt16? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) == 0);
 		}
@@ -373,7 +373,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(BigInteger? value)
+		public static Boolean IsOdd([CanBeNull] BigInteger? value)
 		{
 			return value.HasValue && !value.GetValueOrDefault().IsEven;
 		}
@@ -399,7 +399,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Byte"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(Byte? value)
+		public static Boolean IsOdd([CanBeNull] Byte? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}
@@ -423,7 +423,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(Decimal? value)
+		public static Boolean IsOdd([CanBeNull] Decimal? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}
@@ -447,7 +447,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(Int32? value)
+		public static Boolean IsOdd([CanBeNull] Int32? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}
@@ -471,7 +471,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(Int64? value)
+		public static Boolean IsOdd([CanBeNull] Int64? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}
@@ -497,7 +497,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOdd(SByte? value)
+		public static Boolean IsOdd([CanBeNull] SByte? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}
@@ -521,7 +521,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(Int16? value)
+		public static Boolean IsOdd([CanBeNull] Int16? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}
@@ -547,7 +547,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOdd(UInt32? value)
+		public static Boolean IsOdd([CanBeNull] UInt32? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}
@@ -573,7 +573,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOdd(UInt64? value)
+		public static Boolean IsOdd([CanBeNull] UInt64? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}
@@ -599,7 +599,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/> value is odd; otherwise, <see langword="false"/>.
 		/// </returns>
 		[CLSCompliant(false)]
-		public static Boolean IsOdd(UInt16? value)
+		public static Boolean IsOdd([CanBeNull] UInt16? value)
 		{
 			return value.HasValue && ((value.GetValueOrDefault() % 2) != 0);
 		}

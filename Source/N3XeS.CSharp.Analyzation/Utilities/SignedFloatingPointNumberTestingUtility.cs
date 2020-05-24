@@ -114,7 +114,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/> value is negative; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNegative(Double? value)
+		public static Boolean IsNegative([CanBeNull] Double? value)
 		{
 			return value.IsLessThan(0);
 		}
@@ -138,7 +138,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/> value is negative; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsNegative(Single? value)
+		public static Boolean IsNegative([CanBeNull] Single? value)
 		{
 			return value.IsLessThan(0);
 		}
@@ -162,7 +162,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/> value is positive; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsPositive(Double? value)
+		public static Boolean IsPositive([CanBeNull] Double? value)
 		{
 			return value.IsGreaterThan(0);
 		}
@@ -186,7 +186,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/> value is positive; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsPositive(Single? value)
+		public static Boolean IsPositive([CanBeNull] Single? value)
 		{
 			return value.IsGreaterThan(0);
 		}

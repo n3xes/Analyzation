@@ -114,7 +114,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(Double? value)
+		public static Boolean IsEven([CanBeNull] Double? value)
 		{
 			return value.HasValue && Math.Abs((value.GetValueOrDefault() % 2) - 0).IsLessThan(Double.Epsilon);
 		}
@@ -138,7 +138,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is even; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsEven(Single? value)
+		public static Boolean IsEven([CanBeNull] Single? value)
 		{
 			return value.HasValue && Math.Abs((value.GetValueOrDefault() % 2) - 0).IsLessThan(Single.Epsilon);
 		}
@@ -162,7 +162,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(Double? value)
+		public static Boolean IsOdd([CanBeNull] Double? value)
 		{
 			return value.HasValue && Math.Abs((value.GetValueOrDefault() % 2) - 0).IsGreaterThan(Double.Epsilon);
 		}
@@ -186,7 +186,7 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the <paramref name="value"/> is odd; otherwise, <see langword="false"/>.
 		/// </returns>
-		public static Boolean IsOdd(Single? value)
+		public static Boolean IsOdd([CanBeNull] Single? value)
 		{
 			return value.HasValue && Math.Abs((value.GetValueOrDefault() % 2) - 0).IsGreaterThan(Single.Epsilon);
 		}
