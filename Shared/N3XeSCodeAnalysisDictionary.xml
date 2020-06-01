@@ -7,7 +7,7 @@
 			<Term CompoundAlternate="HitBox">Hitbox</Term>
 			<Term CompoundAlternate="HurtBox">Hurtbox</Term>
 			<Term CompoundAlternate="InLine">InLine</Term>
-			<Term CompoundAlternate="Nonwhite">NonWhite</Term>
+			<Term CompoundAlternate="NonWhite">NonWhite</Term>
 			<Term CompoundAlternate="PlaceMark">Placemark</Term>
 			<Term CompoundAlternate="PushBox">Pushbox</Term>
 			<Term CompoundAlternate="RadioPhone">Radiophone</Term>
@@ -28,6 +28,7 @@
 			<Word>Analyzation</Word>
 			<Word>Applicate</Word>
 			<Word>Behaviour</Word>
+			<Word>Calculable</Word>
 			<Word>Caruthers</Word>
 			<Word>Clearable</Word>
 			<Word>Collidable</Word>
@@ -40,6 +41,8 @@
 			<Word>Coroutines</Word>
 			<Word>Coserp</Word>
 			<Word>Deregister</Word>
+			<Word>Deregisters</Word>
+			<Word>DisEnableable</Word>
 			<Word>Downscale</Word>
 			<Word>Downscaled</Word>
 			<Word>Downscales</Word>
@@ -105,12 +108,15 @@
 			<Word>Startable</Word>
 			<Word>Stoppable</Word>
 			<Word>Storable</Word>
+			<Word>Struct</Word>
 			<Word>Subscribable</Word>
 			<Word>Subwindow</Word>
 			<Word>Suppressions</Word>
 			<Word>Synchronizable</Word>
 			<Word>Tokenizer</Word>
 			<Word>tvOS</Word>
+			<Word>Unescaped</Word>
+			<Word>Unthrowable</Word>
 			<Word>Wwise</Word>
 			<Word>XBox</Word>
 			<Word>XBoX</Word>
@@ -148,6 +154,8 @@
 			<Acronym>TLMFC</Acronym>
 			<Acronym>UTF</Acronym>
 			<Acronym>XXXX</Acronym>
+			<Acronym>yd</Acronym>
+			<Acronym>yds</Acronym>
 		</CasingExceptions>
 	</Acronyms>
 </Dictionary>

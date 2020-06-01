@@ -107,8 +107,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="valueBoxed"/> is not <see langword="null"/> and of the
 		///		provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter",
-		 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
+		[SuppressMessage("Microsoft.Design", 
+						 "CA1004:GenericMethodsShouldProvideTypeParameter", 
+						 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
 		public static Boolean IsBoxedTypeOf<T>([CanBeNull] this Object valueBoxed)
 		{
 			return TypeTestingUtility.IsBoxedTypeOf<T>(valueBoxed);
@@ -126,8 +127,9 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the <paramref name="valueBoxed"/> is <see langword="null"/> or is not of the
 		///		provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter",
-		 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
+		[SuppressMessage("Microsoft.Design", 
+						 "CA1004:GenericMethodsShouldProvideTypeParameter", 
+						 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
 		public static Boolean IsNotBoxedTypeOf<T>([CanBeNull] this Object valueBoxed)
 		{
 			return TypeTestingUtility.IsNotBoxedTypeOf<T>(valueBoxed);

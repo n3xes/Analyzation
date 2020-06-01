@@ -115,8 +115,9 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <paramref name="valueBoxed"/> is not <see langword="null"/> and of the
 		///		provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter",
-		 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
+		[SuppressMessage("Microsoft.Design", 
+						 "CA1004:GenericMethodsShouldProvideTypeParameter", 
+						 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
 		public static Boolean IsBoxedTypeOf<T>([CanBeNull] Object valueBoxed)
 		{
 			return valueBoxed.IsNotNull() && (valueBoxed.GetActualType() == typeof(T));
@@ -134,8 +135,9 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <paramref name="valueBoxed"/> is <see langword="null"/> or is not of the
 		///		provided type <typeparamref name="T"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter",
-		 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
+		[SuppressMessage("Microsoft.Design", 
+						 "CA1004:GenericMethodsShouldProvideTypeParameter", 
+						 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
 		public static Boolean IsNotBoxedTypeOf<T>([CanBeNull] Object valueBoxed)
 		{
 			return valueBoxed.IsNull() || (valueBoxed.GetActualType() != typeof(T));
@@ -152,7 +154,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <paramref name="value"/> is not a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false"),
-		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods",
+		 SuppressMessage("Microsoft.Design", 
+						 "CA1062:Validate arguments of public methods", 
 						 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
 		public static Boolean IsNotNullableType<T>([CanBeNull] T value)
 		{
@@ -225,7 +228,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the <paramref name="value"/> is a <see cref="T:System.Nullable`1"/> type; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true"),
-		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods",
+		 SuppressMessage("Microsoft.Design", 
+						 "CA1062:Validate arguments of public methods", 
 						 Justification = "Reviewed.  Suppression is OK here.  This is required.")]
 		public static Boolean IsNullableType<T>([CanBeNull] T value)
 		{

@@ -114,7 +114,10 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> value is <see langword="null"/>, empty, or white space; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false"),
-		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
+		 SuppressMessage("Microsoft.Naming", 
+						 "CA1702:CompoundWordsShouldBeCasedCorrectly", 
+						 Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", 
+						 MessageId = "WhiteSpace")]
 		// ReSharper disable once InconsistentNaming
 		public static Boolean HasNonWhiteSpaceValue([CanBeNull] this String value)
 		{
@@ -143,7 +146,10 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> value is not <see langword="null"/>, empty, or white space; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true"),
-		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
+		 SuppressMessage("Microsoft.Naming", 
+						 "CA1702:CompoundWordsShouldBeCasedCorrectly", 
+						 Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", 
+						 MessageId = "WhiteSpace")]
 		// ReSharper disable once InconsistentNaming
 		public static Boolean HasNullOrWhiteSpaceValue([CanBeNull] this String value)
 		{
@@ -615,7 +621,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => true")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => true")]
 		public static Boolean IsDefaultValue([CanBeNull] this SByte? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
@@ -670,7 +677,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => true")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => true")]
 		public static Boolean IsDefaultValue([CanBeNull] this UInt32? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
@@ -698,7 +706,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => true")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => true")]
 		public static Boolean IsDefaultValue([CanBeNull] this UInt64? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
@@ -726,7 +735,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => true")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => true")]
 		public static Boolean IsDefaultValue([CanBeNull] this UInt16? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
@@ -1213,7 +1223,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => false")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue([CanBeNull] this SByte? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
@@ -1268,7 +1279,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => false")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue([CanBeNull] this UInt32? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
@@ -1296,7 +1308,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => false")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue([CanBeNull] this UInt64? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
@@ -1324,7 +1337,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => false")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue([CanBeNull] this UInt16? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
@@ -1425,7 +1439,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <param name="value">The <typeparamref name="T"/> to check if is not equal to <see langword="null"/>.</param>
 		/// <exception cref="InvalidOperationException">The provided <paramref name="value"/> must not be <see langword="null"/>.</exception>
 		[ContractAnnotation("value:null => halt"),
-		 SuppressMessage("Microsoft.Usage", "CA2201:DoNotRaiseReservedExceptionTypes",
+		 SuppressMessage("Microsoft.Usage", 
+						 "CA2201:DoNotRaiseReservedExceptionTypes",
 						 Justification = "Reviewed.  Suppression is OK here. This is intended functionality.")]
 		// ReSharper disable once InconsistentNaming
 		public static void RequireIsNotNull<T>([CanBeNull] this T value)
@@ -1440,7 +1455,8 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <param name="value">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to check if is equal to <see langword="null"/>.</param>
 		/// <exception cref="InvalidOperationException">The provided <paramref name="value"/> must be <see langword="null"/>.</exception>
 		[ContractAnnotation("value:null => halt"),
-		 SuppressMessage("Microsoft.Usage", "CA2201:DoNotRaiseReservedExceptionTypes",
+		 SuppressMessage("Microsoft.Usage", 
+						 "CA2201:DoNotRaiseReservedExceptionTypes",
 						 Justification = "Reviewed.  Suppression is OK here. This is intended functionality.")]
 		// ReSharper disable once InconsistentNaming
 		public static void RequireIsNull<T>([CanBeNull] this T? value)

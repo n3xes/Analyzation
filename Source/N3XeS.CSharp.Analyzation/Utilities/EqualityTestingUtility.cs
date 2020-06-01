@@ -118,8 +118,14 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the provided <paramref name="value"/> value is <see langword="null"/>, empty, or white space; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false"),
-		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Justification = "Reviewed.  Suppression is OK here.  Value can be null.", MessageId = "0"),
-		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
+		 SuppressMessage("Microsoft.Design", 
+						 "CA1062:Validate arguments of public methods", 
+						 Justification = "Reviewed.  Suppression is OK here.  Value can be null.", 
+						 MessageId = "0"),
+		 SuppressMessage("Microsoft.Naming", 
+						 "CA1702:CompoundWordsShouldBeCasedCorrectly",
+						 Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.",
+						 MessageId = "WhiteSpace")]
 		// ReSharper disable once InconsistentNaming
 		public static Boolean HasNonWhiteSpaceValue([CanBeNull] String value)
 		{
@@ -165,8 +171,14 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		///		<see langword="true"/> if the provided <paramref name="value"/> value is not <see langword="null"/>, empty, or white space; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true"),
-		 SuppressMessage("Microsoft.Design", "CA1062:Validate arguments of public methods", Justification = "Reviewed.  Suppression is OK here.  Value can be null.", MessageId = "0"),
-		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
+		 SuppressMessage("Microsoft.Design", 
+						 "CA1062:Validate arguments of public methods", 
+						 Justification = "Reviewed.  Suppression is OK here.  Value can be null.", 
+						 MessageId = "0"),
+		 SuppressMessage("Microsoft.Naming", 
+						 "CA1702:CompoundWordsShouldBeCasedCorrectly", 
+						 Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", 
+						 MessageId = "WhiteSpace")]
 		// ReSharper disable once InconsistentNaming
 		public static Boolean HasNullOrWhiteSpaceValue([CanBeNull] String value)
 		{
@@ -675,7 +687,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => true")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => true")]
 		public static Boolean IsDefaultValue([CanBeNull] SByte? value)
 		{
 			return value == default(SByte?);
@@ -730,7 +743,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => true")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => true")]
 		public static Boolean IsDefaultValue([CanBeNull] UInt32? value)
 		{
 			return value == default(UInt32?);
@@ -758,7 +772,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => true")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => true")]
 		public static Boolean IsDefaultValue([CanBeNull] UInt64? value)
 		{
 			return value == default(UInt64?);
@@ -786,7 +801,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => true")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => true")]
 		public static Boolean IsDefaultValue([CanBeNull] UInt16? value)
 		{
 			return value == default(UInt16?);
@@ -1292,7 +1308,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => false")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue([CanBeNull] SByte? value)
 		{
 			return value != default(SByte?);
@@ -1347,7 +1364,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => false")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue([CanBeNull] UInt32? value)
 		{
 			return value != default(UInt32?);
@@ -1375,7 +1393,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => false")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue([CanBeNull] UInt64? value)
 		{
 			return value != default(UInt64?);
@@ -1403,7 +1422,8 @@ namespace N3XeS.CSharp.Analyzation.Utilities
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[CLSCompliant(false), ContractAnnotation("value:null => false")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue([CanBeNull] UInt16? value)
 		{
 			return value != default(UInt16?);
