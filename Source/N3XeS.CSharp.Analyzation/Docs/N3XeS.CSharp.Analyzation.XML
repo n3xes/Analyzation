@@ -4,6 +4,25 @@
         <name>N3XeS.CSharp.Analyzation</name>
     </assembly>
     <members>
+        <member name="T:N3XeS.CSharp.Analyzation.Attributes.ValidatedNotNullAttribute">
+            <summary>
+            	A parameter attribute used to describe a parameter that it is being validated against
+            	<see langword="null"/> in a validation method.
+            </summary>
+            <author>
+             <AuthorName>John Caruthers</AuthorName>
+             <CreationDate>Friday, January 17, 2014  (01/17/2014)</CreationDate>
+             <CreationTime>01:41:57 AM</CreationTime>
+            </author>
+            <history>
+             <Modification>
+              <ModifierName></ModifierName>
+              <ModificationDate></ModificationDate>
+              <ModificationTime></ModificationTime>
+              <ModificationDescription></ModificationDescription>
+             </Modification>
+            </history>
+        </member>
         <member name="T:N3XeS.CSharp.Analyzation.Extensions.EqualityTestingExtension">
             <summary>
             	An equality testing related extension.

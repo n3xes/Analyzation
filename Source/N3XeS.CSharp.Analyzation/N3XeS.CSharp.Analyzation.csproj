@@ -67,6 +67,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\ValidatedNotNullAttribute.cs" />
     <Compile Include="Extensions\EqualityTestingExtension.cs" />
     <Compile Include="Extensions\FloatingPointNumberParityTestingExtension.cs" />
     <Compile Include="Extensions\IntegralParityTestingExtension.cs" />
@@ -180,7 +181,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Attributes\" />
     <Folder Include="BaseClasses\" />
     <Folder Include="Configurations\" />
     <Folder Include="Delegates\" />

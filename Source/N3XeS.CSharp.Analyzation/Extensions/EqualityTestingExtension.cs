@@ -40,6 +40,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 
 	using JetBrains.Annotations;
 
+	using Attributes;
 	using Utilities;
 
 	#endregion
@@ -119,7 +120,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 						 Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", 
 						 MessageId = "WhiteSpace")]
 		// ReSharper disable once InconsistentNaming
-		public static Boolean HasNonWhiteSpaceValue([CanBeNull] this String value)
+		public static Boolean HasNonWhiteSpaceValue([CanBeNull, ValidatedNotNull] this String value)
 		{
 			return EqualityTestingUtility.HasNonWhiteSpaceValue(value);
 		}
@@ -133,7 +134,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
 		// ReSharper disable once InconsistentNaming
-		public static Boolean HasNoValue([CanBeNull] this String value)
+		public static Boolean HasNoValue([CanBeNull, ValidatedNotNull] this String value)
 		{
 			return EqualityTestingUtility.HasNoValue(value);
 		}
@@ -151,7 +152,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 						 Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", 
 						 MessageId = "WhiteSpace")]
 		// ReSharper disable once InconsistentNaming
-		public static Boolean HasNullOrWhiteSpaceValue([CanBeNull] this String value)
+		public static Boolean HasNullOrWhiteSpaceValue([CanBeNull, ValidatedNotNull] this String value)
 		{
 			return EqualityTestingUtility.HasNullOrWhiteSpaceValue(value);
 		}
@@ -165,7 +166,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
 		// ReSharper disable once InconsistentNaming
-		public static Boolean HasValue([CanBeNull] this String value)
+		public static Boolean HasValue([CanBeNull, ValidatedNotNull] this String value)
 		{
 			return EqualityTestingUtility.HasValue(value);
 		}
@@ -343,7 +344,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of <typeparamref name="T"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefault<T>([CanBeNull] this T value)
+		public static Boolean IsDefault<T>([CanBeNull, ValidatedNotNull] this T value)
 			where T : class
 		{
 			return EqualityTestingUtility.IsDefault(value);
@@ -375,7 +376,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this BigInteger? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this BigInteger? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -404,7 +405,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.DateTime"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this DateTime? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this DateTime? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -431,7 +432,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Guid"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Guid? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Guid? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -458,7 +459,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Byte"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Byte? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Byte? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -485,7 +486,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Char"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Char? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Char? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -512,7 +513,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Decimal? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Decimal? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -527,7 +528,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Double? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Double? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -540,7 +541,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Single? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Single? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -567,7 +568,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Int32? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Int32? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -594,7 +595,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Int64? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Int64? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -623,7 +624,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false), 
 		 ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this SByte? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this SByte? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -650,7 +651,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this Int16? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this Int16? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -679,7 +680,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false), 
 		 ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this UInt32? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this UInt32? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -708,7 +709,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false), 
 		 ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this UInt64? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this UInt64? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -737,7 +738,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false), 
 		 ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue([CanBeNull] this UInt16? value)
+		public static Boolean IsDefaultValue([CanBeNull, ValidatedNotNull] this UInt16? value)
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
 		}
@@ -765,7 +766,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsDefaultValue<T>([CanBeNull] this T? value)
+		public static Boolean IsDefaultValue<T>([CanBeNull, ValidatedNotNull] this T? value)
 			where T : struct
 		{
 			return EqualityTestingUtility.IsDefaultValue(value);
@@ -944,7 +945,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of <typeparamref name="T"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefault<T>([CanBeNull] this T value)
+		public static Boolean IsNotDefault<T>([CanBeNull, ValidatedNotNull] this T value)
 			where T : class
 		{
 			return EqualityTestingUtility.IsNotDefault(value);
@@ -976,7 +977,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this BigInteger? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this BigInteger? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1006,7 +1007,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.DateTime"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this DateTime? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this DateTime? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1033,7 +1034,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Guid"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Guid? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Guid? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1060,7 +1061,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Byte"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Byte? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Byte? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1087,7 +1088,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Char"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Char? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Char? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1114,7 +1115,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Decimal? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Decimal? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1129,7 +1130,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Double? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Double? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1142,7 +1143,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Single? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Single? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1169,7 +1170,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Int32? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Int32? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1196,7 +1197,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Int64? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Int64? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1225,7 +1226,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false), 
 		 ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this SByte? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this SByte? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1252,7 +1253,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of a <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this Int16? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this Int16? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1281,7 +1282,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false), 
 		 ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this UInt32? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this UInt32? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1310,7 +1311,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false), 
 		 ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this UInt64? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this UInt64? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1339,7 +1340,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// </returns>
 		[CLSCompliant(false), 
 		 ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue([CanBeNull] this UInt16? value)
+		public static Boolean IsNotDefaultValue([CanBeNull, ValidatedNotNull] this UInt16? value)
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
 		}
@@ -1352,7 +1353,6 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		/// <returns>
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of <typeparamref name="T"/>; otherwise, <see langword="false"/>.
 		/// </returns>
-		[ContractAnnotation("value:null => false")]
 		public static Boolean IsNotDefaultValue<T>(this T value)
 			where T : struct
 		{
