@@ -1368,7 +1368,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/>, <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotDefaultValue<T>([CanBeNull] this T? value)
+		public static Boolean IsNotDefaultValue<T>([CanBeNull, ValidatedNotNull] this T? value)
 			where T : struct
 		{
 			return EqualityTestingUtility.IsNotDefaultValue(value);
@@ -1383,7 +1383,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotNull<T>([CanBeNull] this T value)
+		public static Boolean IsNotNull<T>([CanBeNull, ValidatedNotNull] this T value)
 		{
 			return EqualityTestingUtility.IsNotNull(value);
 		}
@@ -1397,7 +1397,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is not equal to <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => false")]
-		public static Boolean IsNotNull<T>([CanBeNull] this T? value)
+		public static Boolean IsNotNull<T>([CanBeNull, ValidatedNotNull] this T? value)
 			where T : struct
 		{
 			return EqualityTestingUtility.IsNotNull(value);
@@ -1412,7 +1412,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsNull<T>([CanBeNull] this T value)
+		public static Boolean IsNull<T>([CanBeNull, ValidatedNotNull] this T value)
 		{
 			return EqualityTestingUtility.IsNull(value);
 		}
@@ -1426,7 +1426,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 		///		<see langword="true"/> if the provided <paramref name="value"/> is equal to <see langword="null"/>; otherwise, <see langword="false"/>.
 		/// </returns>
 		[ContractAnnotation("value:null => true")]
-		public static Boolean IsNull<T>([CanBeNull] this T? value)
+		public static Boolean IsNull<T>([CanBeNull, ValidatedNotNull] this T? value)
 			where T : struct
 		{
 			return EqualityTestingUtility.IsNull(value);
@@ -1443,7 +1443,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 						 "CA2201:DoNotRaiseReservedExceptionTypes",
 						 Justification = "Reviewed.  Suppression is OK here. This is intended functionality.")]
 		// ReSharper disable once InconsistentNaming
-		public static void RequireIsNotNull<T>([CanBeNull] this T value)
+		public static void RequireIsNotNull<T>([CanBeNull, ValidatedNotNull] this T value)
 		{
 			EqualityTestingUtility.RequireIsNotNull(value);
 		}
@@ -1459,7 +1459,7 @@ namespace N3XeS.CSharp.Analyzation.Extensions
 						 "CA2201:DoNotRaiseReservedExceptionTypes",
 						 Justification = "Reviewed.  Suppression is OK here. This is intended functionality.")]
 		// ReSharper disable once InconsistentNaming
-		public static void RequireIsNull<T>([CanBeNull] this T? value)
+		public static void RequireIsNull<T>([CanBeNull, ValidatedNotNull] this T? value)
 			where T : struct
 		{
 			EqualityTestingUtility.RequireIsNull(value);
